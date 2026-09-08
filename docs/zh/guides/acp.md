@@ -93,4 +93,4 @@ ACP 工作使用 `acp_agent` 会话类型，由 Agents/ACP 工作流创建和管
 - [机器人](/zh/guides/bot.md)
 - [会话](/zh/guides/sessions.md)
 - [文件](/zh/guides/files.md)
-- [提供方与模型](/zh/integrations/providers/llm.md)
+- [模型服务商与模型](/zh/integrations/providers/llm.md)

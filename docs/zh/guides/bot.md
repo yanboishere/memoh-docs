@@ -24,7 +24,7 @@
 | **Overview** | workspace runtime、库、渠道、记忆等健康检查 |
 | **General** | 主模型/标题/生图、记忆/搜索/浏览器/TTS、时区、语言、推理、危险区 |
 | **Desktop** | Workspace display runtime、有头浏览器、实时 display session |
-| **Computers** | 远程运行时（运行 Memoh runtime 的自有机器），机器人可在其上读写文件、执行命令 |
+| **电脑** | 远程运行时（运行 Memoh runtime 的自有机器），机器人可在其上读写文件、执行命令 |
 | **Workspace** | 容器型 workspace 起停、快照、导入导出 |
 | **Network** | Workspace 网络与 overlay provider 状态/动作 |
 | **Memory** | 浏览、搜、建、改、压记忆 |
@@ -53,7 +53,7 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 
 若这些资源还没有，先建好：
 
-- [供应商与模型](/zh/integrations/providers/llm)
+- [模型服务商与模型](/zh/integrations/providers/llm)
 - [内置记忆提供方](/zh/integrations/providers/memory/builtin.md)（如用）
 - [搜索提供方](/zh/integrations/providers/web-search)
 - [TTS 提供方](/zh/integrations/providers/tts/index)
@@ -70,7 +70,7 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 | **Image Generation Model** | 可选，需带 `image-output` 的聊天模型 |
 | **Memory Provider** | 长期记忆后端；内置类型还可自带记忆/向量模型 |
 | **Search Provider** | 联网搜索用哪家 |
-| **TTS Model** | 来自 TTS 流，不是普通 chat 供应商里选 |
+| **TTS Model** | 来自 TTS 流，不是普通 chat 模型服务商里选 |
 | **Timezone** | 不填则用户时区再落到系统 |
 | **Language** | 机器人主用语 |
 | **Reasoning Effort** | 当前 chat 模型有 `reasoning` 时可用；可选值随模型而定（如 `low` / `medium` / `high`） |

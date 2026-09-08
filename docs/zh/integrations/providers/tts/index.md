@@ -42,4 +42,4 @@ Memoh 支持把字变成声音。可以分三层想：
 ## 接下来
 
 - 配无 key 的 Edge 选项：[Edge TTS](/zh/integrations/providers/tts/edge.md)
-- 了解音频 provider client type 与模型关系：[供应商与模型](/zh/integrations/providers/llm)
+- 了解音频 provider client type 与模型关系：[模型服务商与模型](/zh/integrations/providers/llm)

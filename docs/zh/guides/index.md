@@ -23,7 +23,7 @@
 - **[访问控制](/zh/guides/access)**：配置 ACL 预设、规则顺序和来源限定。
 - **[Workspace](/zh/guides/container)**：从产品界面理解 workspace 行为。
 - **[上下文压缩](/zh/guides/compaction)**：缩小当前会话上下文占用。
-- **[计划任务](/zh/guides/schedule)**：按 cron 计划运行周期性工作，无需活跃聊天。
+- **[定时任务](/zh/guides/schedule)**：按 cron 计划运行周期性工作，无需活跃聊天。
 - **[邮件](/zh/guides/email)**：配置邮件相关工作流。
 
 ## 其他文档区域

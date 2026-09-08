@@ -35,7 +35,7 @@ Desktop **不会**自己运行本地服务端或数据库。你始终需要把�
 
 Desktop 可以把它所在的机器注册成服务端机器人可用的 **Computer**，不用另跑 runtime 进程：打开 **这台电脑** 开关，起个名字，Desktop 会通过内嵌的 Memoh runtime SDK 在后台维持连接。凭据使用操作系统的安全存储保存。
 
-权限模型、按机器人授权以及机器人在电脑上能做什么，见 [Computers](/zh/guides/computers.md)。
+权限模型、按机器人授权以及机器人在电脑上能做什么，见 [电脑](/zh/guides/computers.md)。
 
 ## Desktop 负责什么
 

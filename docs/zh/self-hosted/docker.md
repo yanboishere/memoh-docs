@@ -1,4 +1,4 @@
-# Server Deploy
+# 服务器部署（Server Deploy）
 
 Server Deploy 是 Memoh 的自托管服务端部署形态，适合长期在线、多人、多租户、远程访问，或需要机器人在桌面离线时继续服务外部渠道的场景。
 
@@ -59,7 +59,7 @@ curl -fsSL https://memoh.sh | sh
 需要提权，脚本会只对 `docker` 命令使用 `sudo`。如果确实要以 root
 运行整个安装脚本，需要显式设置 `MEMOH_ALLOW_ROOT_INSTALL=true`。
 
-脚本会：检查 Docker/Compose；判断首次安装、升级或重装；交互问配置（工作区、数据目录、管理员、JWT、Postgres 密码、workspace backend 提示）；升级时自动复用已有 `config.toml`，保持数据库凭据和已有 PostgreSQL volume 一致；可选择清理重装并删除 Memoh 容器、volume 和 network；从 GitHub 取最新发布并克隆；按 Docker 模板生成 `config.toml`；拒绝升级遗留的 SQLite 安装（仅支持 PostgreSQL，需选择重装）；把 Memoh 镜像钉到发布版本（例如 `v0.13.0` 对应镜像 tag `0.13.0`）；全新安装时带起同机部署的 Connect-It——凭据只生成一次、写进 `.env`，并加上 `connectors` profile（见[上面](#connect-it-连接器)）；默认带 `qdrant` profile 启动，启用 sparse 时再加 `sparse` profile；启动失败时打印数据库、迁移和 server 的近期日志。
+脚本会：检查 Docker/Compose；判断首次安装、升级或重装；交互问配置（工作区、数据目录、管理员、JWT、Postgres 密码、workspace backend 提示）；升级时自动复用已有 `config.toml`，保持数据库凭据和已有 PostgreSQL volume 一致；可选择清理重装并删除 Memoh 容器、volume 和 network；从 GitHub 取最新发布并克隆；按 Docker 模板生成 `config.toml`；拒绝升级遗留的 SQLite 安装（仅支持 PostgreSQL，需选择重装）；把 Memoh 镜像钉到发布版本（例如 `v0.13.0` 对应镜像 tag `0.13.0`）；全新安装时带起同机部署的 Connect-It——凭据只生成一次、写进 `.env`，并加上 `connectors` profile（见[上面](#connect-it-连接器)）；启动失败时打印数据库、迁移和 server 的近期日志。
 
 **静默安装**（全默认、无提问）：
 
@@ -211,7 +211,7 @@ docker compose -f docker-compose.yml -f docker/docker-compose.cn.yml up -d
 | `[pgvector]` | 可选的 pgvector 库，用于记忆向量（`enabled`、host、port、user、password、database、sslmode） |
 | `[internal_rpc]` | 主服务/渠道 worker 拆分部署的 RPC 地址与共享密钥 |
 | `[webhook_tunnel]` | webhook 隧道模式（`disabled` 或 `external`）与 `public_base_url` |
-| `[registry]` | 供应商定义目录 |
+| `[registry]` | 模型服务商定义目录 |
 | `[connect_it]` | [连接器](/zh/guides/connectors.md)用的 Connect-It 地址（`base_url`、`api_token`）；两项都空即关闭该功能。Compose 环境里由 `MEMOH_CONNECT_IT_BASE_URL` / `MEMOH_CONNECT_IT_API_TOKEN` 覆盖 |
 | `[web]` | 前端 host/port |
 | `[agent]` | 工具输出截断上限：`tool_output_max_bytes`（默认 65536）、`tool_output_max_lines`（默认 2000）、`system_files_max_bytes`（默认 32768）。超限时保留头尾，不是盲切。 |

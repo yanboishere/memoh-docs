@@ -21,4 +21,4 @@ Desktop 适合想要托盘图标与快捷键的原生体验，或者想让服务
 ## 相关页面
 
 - [Workspace backend](/zh/self-hosted/workspace-backends) 解释 Docker、containerd、Apple 和本地 workspace 的差异。
-- [Computers](/zh/guides/computers) 介绍如何把自己的机器共享给机器人。
+- [电脑](/zh/guides/computers) 介绍如何把自己的机器共享给机器人。

@@ -14,7 +14,7 @@ Sessions are scoped per bot — each bot manages its own set of sessions indepen
 
 ## Session Types
 
-Memoh uses six session types to separate different kinds of bot activity:
+Memoh uses five session types to separate different kinds of bot activity:
 
 | Type | Description |
 |------|-------------|

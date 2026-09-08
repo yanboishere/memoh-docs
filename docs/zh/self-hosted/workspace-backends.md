@@ -1,4 +1,4 @@
-# Workspace backend
+# 工作区后端（Workspace backend）
 
 每个 Memoh 机器人都在一个 workspace 里工作。workspace 可以是隔离容器，也可以是在 Desktop/local 场景下明确受信任的本机目录。Backend 决定 workspace 跑在哪里，以及隔离、网络、快照和 display 能力是否可用。
 

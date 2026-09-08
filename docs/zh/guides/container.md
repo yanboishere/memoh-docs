@@ -1,4 +1,4 @@
-# Workspace 与容器
+# 工作区（Workspace）与容器
 
 每个机器人都在一个 workspace 里工作。Server Deploy 里通常是隔离容器、Pod 或类似 VM 的 runtime；在受信任的 Desktop/local 场景里，也可以是宿主机上的本地目录。workspace 提供文件系统、命令执行环境、MCP runtime，以及可选的图形桌面。
 
