@@ -76,7 +76,7 @@
 - 空的、被截断的、压完不比原文小的摘要直接拒收，不会存成结果。
 - 跨多个 workspace 的会话里，摘要保留"哪段话在哪台机器上发生"的信息。
 
-普通 chat、**discuss**、pipeline 类对话现在都会压。
+普通 chat、**discuss**、pipeline 类对话都会压。
 
 ---
 
@@ -90,7 +90,7 @@
 
 ---
 
-## 和 `context_window`
+## 与 `context_window` 的关系
 
 Memoh 拿当前 chat 模型的 `context_window` 对照本会话，网页状态区、`/status` 都能看到离上限多近。注意 token 是粗估（约 4 字符/token），百分比当参考就好，别当精确值。
 

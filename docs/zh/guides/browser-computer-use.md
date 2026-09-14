@@ -39,7 +39,7 @@ workspace desktop 启用后，agent 可以使用浏览器和电脑操作工具�
 
 ### 截图不再自动注入对话
 
-`browser_observe` 与 `computer_observe` 的截图会落盘到 workspace 路径（如 `/data/computer-screenshots/1716200000.jpg`），工具结果只返回这个路径，不再自动塞到对话里。需要查看图像时显式调用文件读取工具读这个路径，可以让观察成本变低，也把“是否值得花 token 读图”交回模型决定。
+`browser_observe` 与 `computer_observe` 的截图会落盘到 workspace 路径（如 `/data/computer-screenshots/1716200000.jpg`），工具结果只返回这个路径，不会自动塞到对话里。需要查看图像时显式调用文件读取工具读这个路径，可以让观察成本变低，也把“是否值得花 token 读图”交回模型决定。
 
 ### 无障碍辅助二进制
 
@@ -47,7 +47,7 @@ Computer Use 依赖容器内 `/opt/memoh/toolkit/display/bin/a11y-cli` 以及 wo
 
 这些是 workspace runtime 能力，不是用来自动化 Electron 桌面 App 本身的。
 
-机器人挂了远程[电脑](./computers.md)时，Browser Use / Computer Use 也仍然在**服务器工作区**里跑，不跟随所选使用位置。
+机器人连接了远程[电脑](./computers.md)时，Browser Use / Computer Use 也仍然在**服务器工作区**里跑，不跟随所选使用位置。
 
 ## 相关页面
 

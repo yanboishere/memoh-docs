@@ -35,7 +35,7 @@ MCP 把「外部数据、外部工具」用相对统一的方式接进来。你�
 
 ## OAuth
 
-有的 MCP 服要走 OAuth。Memoh 会：
+有的 MCP 服要走 OAuth。Memoh 支持完整的 MCP OAuth 流程：
 
 1. 在需要认证的连接上点 **OAuth**。
 2. 自动 **discover** 服务方 OAuth 配置。

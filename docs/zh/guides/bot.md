@@ -22,7 +22,7 @@
 | Tab | 内容 |
 |-----|------|
 | **Overview** | workspace runtime、库、渠道、记忆等健康检查 |
-| **General** | 主模型/标题/生图、记忆/搜索/浏览器/TTS、时区、语言、推理、危险区 |
+| **General** | 主模型/标题/生图、记忆/搜索/TTS 绑定、时区、语言、推理、危险区 |
 | **Desktop** | Workspace display runtime、有头浏览器、实时 display session |
 | **电脑** | 远程运行时（运行 Memoh runtime 的自有机器），机器人可在其上读写文件、执行命令 |
 | **Workspace** | 容器型 workspace 起停、快照、导入导出 |
@@ -32,7 +32,7 @@
 | **Access** | ACL 与默认通过/拒绝 |
 | **Tool Approval** | 需要人类确认的工具审批设置 |
 | **Agents** | 可为聊天 workspace 启用的 ACP 兼容编码智能体，如 Codex、Claude Code |
-| **Email** | 邮服绑定、发件箱 |
+| **Email** | 邮箱绑定、发件箱 |
 | **Connectors** | 经 Connect-It 连接的第三方服务（OAuth 或 API Key）：状态、启停、重新授权、断开 |
 | **Hooks** | 保存在 `/data/.memoh/hooks.json` 的机器人自动化规则 |
 | **MCP** | 连接（Stdio/Remote/OAuth） |
@@ -70,7 +70,7 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 | **Image Generation Model** | 可选，需带 `image-output` 的聊天模型 |
 | **Memory Provider** | 长期记忆后端；内置类型还可自带记忆/向量模型 |
 | **Search Provider** | 联网搜索用哪家 |
-| **TTS Model** | 来自 TTS 流，不是普通 chat 模型服务商里选 |
+| **TTS Model** | 来自 TTS 提供方流程，不在普通 chat 模型服务商里选 |
 | **Timezone** | 不填则用户时区再落到系统 |
 | **Language** | 机器人主用语 |
 | **Reasoning Effort** | 当前 chat 模型有 `reasoning` 时可用；可选值随模型而定（如 `low` / `medium` / `high`） |
@@ -79,7 +79,7 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 
 - **生图模型** 故意与主聊天模型分开，好单独换「更擅长出图」的。
 - **TTS** 在 [TTS 提供方](../integrations/providers/tts/index.md) 里用所配置语音提供方的 `speech` 模型。
-- `context_window` 会影响状态栏展示和 [会话压缩](./compaction.md) 的体感。
+- 所选聊天模型的 `context_window` 会影响会话状态展示和 [会话压缩](./compaction.md)。
 
 ---
 

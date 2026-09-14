@@ -39,6 +39,6 @@ Hooks 可以围绕支持的事件运行小型自动化规则，Schedule 则让�
 - **[机器人](./guides/bot.md)** - 创建并配置机器人。
 - **[模型服务商与模型](./integrations/providers/llm.md)** - 配置模型访问。
 - **[渠道](./integrations/channels/index.md)** - 选择机器人出现的位置。
-- **[Skills](./guides/skills.md)** 和 **[应用市场](./guides/supermarket.md)** - 安装可复用能力。
+- **[技能](./guides/skills.md)** 和 **[应用市场](./guides/supermarket.md)** - 安装可复用能力。
 - **[定时任务](./guides/schedule.md)** 和 **[访问控制](./guides/access.md)** - 运维周期性工作和权限。
 - **[自托管](./self-hosted/index.md)** - 部署并维护自己的 Memoh 实例。

@@ -1,6 +1,6 @@
 # 文件
 
-每个机器人都有自己的 **workspace 文件系统**。Server Deploy 里通常在容器型 workspace 内；trusted Desktop/local 模式下也可能是本地 workspace 目录。在 **Files** tab 里可以直接管理。
+每个机器人都有自己的 **workspace 文件系统**。服务端部署里通常在容器型 workspace 内；受信任的桌面/本地模式下也可能是本地 workspace 目录。在 **Files** tab 里可以直接管理。
 
 ---
 

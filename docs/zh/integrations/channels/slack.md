@@ -22,9 +22,9 @@
 - `channels:history` / `groups:history` / `im:history` / `mpim:history`：读各场景消息
 - `chat:write`：在频道/线程/DM 里发
 - `files:read` / `files:write`：收、发文件
-- `reactions:write`：动反应
+- `reactions:write`：添加/移除反应
 
-建议再加（名子、元数据更齐）：
+建议再加（名字、元数据更齐）：
 
 - `channels:read` / `groups:read` / `im:read` / `mpim:read`
 
@@ -54,9 +54,9 @@
 
 - DM：在 Slack 里和该 app 开对话并发一条。
 - 公开频道：把 app **邀请**进频道。
-- 私聊频道：装好后**显式邀请**进频道。
+- 私有频道：装好后**显式邀请**进频道。
 
-能发不能收图/文件，多半缺 `files:read`；能连上没人任何入站，查 **Event** 和 **history** 类 scope 是否配对。
+能发不能收图/文件，多半缺 `files:read`；能连上但收不到任何入站消息，查 **Event** 和 **history** 类 scope 是否配对。
 
 ## 支持的能力
 

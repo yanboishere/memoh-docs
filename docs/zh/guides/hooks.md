@@ -198,7 +198,7 @@ action 可以返回这些 decision：
 
 ## 事件目录
 
-Hooks tab 会从 `/bots/{bot_id}/hooks/events` 加载事件目录。标记为 runtime-supported 的事件已经接入 v0.13.0 执行路径。catalog-only 事件可以通过配置解析和测试接口，但 v0.13.0 没有实时运行路径会自动发出这些事件。
+Hooks tab 会从 `/bots/{bot_id}/hooks/events` 加载事件目录。标记为 runtime-supported 的事件已经接入 v0.13.0 执行路径。catalog-only 事件可以通过配置解析和测试接口，但 v0.13.0 没有实际的运行时路径会发出这些事件。
 
 | Event | 区域 | 已接入运行时 | 说明 |
 |-------|------|--------------|------|
@@ -257,7 +257,7 @@ Hooks tab 会从 `/bots/{bot_id}/hooks/events` 加载事件目录。标记为 ru
 Hooks 很强大。请把它们当成会在机器人 workspace 里运行的代码来对待。
 
 - 启用前审查每个 command action。
-- 小心使用 `PreToolUse`、`BeforeWorkspaceCommand` 和 `BeforeFileWrite`；它们会阻断机器人的正常工作。
+- 小心使用 `PreToolUse`、`BeforeWorkspaceCommand` 和 `BeforeFileWrite`；它们可能阻断机器人的正常工作。
 - 保持较短 timeout，并明确设置 `on_error`。
 - 不要把长期有效的 secrets 直接写进 `hooks.json`。
 - 对高风险 hooks 使用尽量窄的 `matcher`。

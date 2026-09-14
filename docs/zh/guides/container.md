@@ -96,7 +96,7 @@ workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`u
 ### 注意
 
 - CDI 在**创建**时生效，改配置后常要**重建**容器；只停再起**不会**换已挂设备。
-- 镜像里仍要装对的用户态库，才能真跑算子。
+- 镜像里仍要装对的用户态库和工具，才能真正跑 CUDA/ROCm 软件。
 - 建好后 **Container** tab 会显示当前挂上的设备，便于核对。
 
 ## 快照
@@ -109,7 +109,7 @@ workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`u
 
 - **Export Data**：把 workspace 文件系统数据打成包下载。
 - **Import Data**：从本地上传归档并解进 workspace 文件系统。
-- **Restore**：在数据目录侧做“清到干净再灌”，适合盘坏了或想从零来而又不删 runtime 实例时。
+- **Restore**：把数据目录重置到干净状态，适合文件系统损坏或想从零开始而又不重建 runtime 实例时。
 
 ## 版本
 

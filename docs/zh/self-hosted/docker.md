@@ -201,7 +201,7 @@ docker compose -f docker-compose.yml -f docker/docker-compose.cn.yml up -d
 | `[server]` | 监听，默认 `:8080` |
 | `[admin]` | 管理员账号 |
 | `[auth]` | JWT 与过期时间 |
-| `timezone` | 服时区，默认 `UTC` |
+| `timezone` | 服务器时区，默认 `UTC` |
 | `[database]` | 数据库驱动；仅支持 `postgres` |
 | `[container]` | Workspace backend 选择，以及通用 workspace 镜像、拉取策略、数据路径、runtime 路径、CNI 设置 |
 | `[containerd]` | socket 与 namespace |
@@ -215,7 +215,7 @@ docker compose -f docker-compose.yml -f docker/docker-compose.cn.yml up -d
 | `[connect_it]` | [连接器](../guides/connectors.md)用的 Connect-It 地址（`base_url`、`api_token`）；两项都空即关闭该功能。Compose 环境里由 `MEMOH_CONNECT_IT_BASE_URL` / `MEMOH_CONNECT_IT_API_TOKEN` 覆盖 |
 | `[web]` | 前端 host/port |
 | `[agent]` | 工具输出截断上限：`tool_output_max_bytes`（默认 65536）、`tool_output_max_lines`（默认 2000）、`system_files_max_bytes`（默认 32768）。超限时保留头尾，不是盲切。 |
-| `[session_runtime]` | 多实例部署的会话状态后端，见上面「多实例部署」 |
+| `[session_runtime]` | 多实例部署的会话状态后端，见下方[多实例部署](#多实例部署) |
 
 ## 多实例部署
 

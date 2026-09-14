@@ -22,7 +22,7 @@ Gmail 类提供方的 OAuth 应用凭据（client ID / client secret）不再在
 ### 新建
 
 1. **Add Email Provider**
-2. 类型如 **Mailgun**（量大）、**泛用 SMTP**（传统邮局）
+2. 类型如 **Mailgun**（量大）、**泛用 SMTP**（传统邮件服务器）
 3. 按表单填 `domain`/`api_key` 或 `host`/`port` 等
 4. 创建
 
