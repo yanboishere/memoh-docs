@@ -15,9 +15,9 @@
 
 邮服提供方**按用户隔离**：每人配自己的、只看得见自己的，机器人绑定也只能用机器人所属用户自己的提供方。不同用户可以重名，互不冲突。
 
-<scalar-callout type="tip" title="Gmail OAuth">
+::: tip Gmail OAuth
 Gmail 类提供方的 OAuth 应用凭据（client ID / client secret）不再在界面里填——由部署方在 server 的 `conf/oauth-clients.toml` 里配一次。用户只走 Gmail 登录授权流程。
-</scalar-callout>
+:::
 
 ### 新建
 

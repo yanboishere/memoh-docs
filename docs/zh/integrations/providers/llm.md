@@ -98,9 +98,9 @@
 
 你本来就有 Copilot 时，可复用进 Memoh。
 
-<scalar-callout type="warning" title="升级提醒">
+::: warning 升级提醒
 Copilot 凭据以前按用户存，现在和 Codex 一样是模型服务商级的一份。老部署升级后要把 Copilot 模型服务商**重新授权一次**。
-</scalar-callout>
+:::
 
 ### 托管模型目录
 

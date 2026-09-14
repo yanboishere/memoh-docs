@@ -2,9 +2,9 @@
 
 大约十分钟即可跑通 Memoh:部署服务端、登录、添加模型服务商、创建第一个机器人,并把它接到一个聊天平台。
 
-<scalar-callout type="tip" title="不想自托管?">
+::: tip 不想自托管?
 [Memoh Cloud](https://memoh.ai) 提供与开源版一致的托管服务。登录后可直接跳到 [第 3 步](#第-3-步添加模型服务商)。
-</scalar-callout>
+:::
 
 ## 前置条件
 
@@ -26,9 +26,9 @@ curl -fsSL https://memoh.sh | sh
 curl -fsSL https://memoh.sh | USE_CN_MIRROR=true sh
 ```
 
-<scalar-callout type="warning" title="不要用 `sudo` 运行整个安装脚本">
+::: warning 不要用 `sudo` 运行整个安装脚本
 当前用户不在 `docker` 组时,脚本会自行调用 `sudo docker`。
-</scalar-callout>
+:::
 
 想手动部署?克隆仓库后执行:
 
