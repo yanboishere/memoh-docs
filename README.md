@@ -106,6 +106,22 @@ pnpm preview
 └── pnpm-lock.yaml
 ```
 
+## Changelog
+
+### 2026-09
+
+- **Navigation restructure**: docs are now organized under a single **References** tree — Getting Started (with Deployment and Channels), Advanced (with Providers → Memory / TTS Providers), and Use Cases. The version selector moved to the header right, and edit links were added to every page.
+- **New Get Started tutorial**: a step-by-step onboarding guide added for both English and Chinese docs; Overview now comes before Getting Started in the sidebar.
+- **Framework**: evaluated a migration to Scalar Docs, then restored VitePress while keeping all content and structure changes intact.
+- **Translation quality pass**: reviewed all 53 English/Chinese page pairs; fixed mistranslations (e.g. ACL presets, private channels, compaction behavior), typos, machine-translated phrasing, and terminology mismatches across 29 files, plus a plural typo in the English Matrix page.
+- **Housekeeping**: `.gitignore` now correctly excludes `docs/.vitepress/cache`.
+
+### Earlier
+
+- Synced docs with the Memoh source and added Quick Start (#7).
+- Added Connect-It connectors documentation (#5).
+- Updated documentation for v0.17 (#4) and v0.13.
+
 ## Contributing
 
 Small fixes are best made directly in the relevant Markdown page. For larger changes:
