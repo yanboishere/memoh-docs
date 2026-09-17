@@ -72,6 +72,6 @@ Every location has its own approval policy for **read**, **write**, and **execut
 
 ## Related Pages
 
-- [Bot Workspace Management](/guides/container.md)
-- [Browser / Computer Use](/guides/browser-computer-use.md)
-- [Self-hosted Overview](/self-hosted/index.md)
+- [Bot Workspace Management](./container.md)
+- [Browser / Computer Use](./browser-computer-use.md)
+- [Self-hosted Overview](../self-hosted/index.md)

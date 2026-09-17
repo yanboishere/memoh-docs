@@ -7,13 +7,13 @@ The Web UI shows Supermarket under Settings with two tabs:
 - **Connectors**
 - **Skills**
 
-**Connectors** comes first and is the default landing tab when the server has [Connect-It configured](/guides/connectors.md#requirements). Without Connect-It, the tab is hidden and **Skills** is the default instead.
+**Connectors** comes first and is the default landing tab when the server has [Connect-It configured](./connectors.md#requirements). Without Connect-It, the tab is hidden and **Skills** is the default instead.
 
 ---
 
 ## Connect A Service
 
-The **Connectors** tab lists services a bot can connect through OAuth or an API key. Pick one, click **Connect**, select the target bot, and complete the authorization. The full flow — authentication methods, connection statuses, and how connector tools reach the bot — is documented in [Connectors](/guides/connectors.md).
+The **Connectors** tab lists services a bot can connect through OAuth or an API key. Pick one, click **Connect**, select the target bot, and complete the authorization. The full flow — authentication methods, connection statuses, and how connector tools reach the bot — is documented in [Connectors](./connectors.md).
 
 ---
 
@@ -26,7 +26,7 @@ The **Connectors** tab lists services a bot can connect through OAuth or an API 
 5. Confirm the install.
 6. The skill appears in that bot's **Skills** tab.
 
-Skills install into the bot's managed skills directory (`/data/skills/<skill-name>` inside the bot workspace). Skill detail pages show the author, version, registry, and links. See [Skills](/guides/skills.md) for how skills are loaded and used.
+Skills install into the bot's managed skills directory (`/data/skills/<skill-name>` inside the bot workspace). Skill detail pages show the author, version, registry, and links. See [Skills](./skills.md) for how skills are loaded and used.
 
 ---
 

@@ -1,9 +1,10 @@
 ---
-title: Memoh 中文文档
+title: Memoh 文档
+description: 学习 Memoh、连接外部系统，或部署你自己的实例。
 ---
 
-# Memoh 中文文档
+# Memoh 文档
 
-学习 Memoh、连接外部系统，或部署自己的服务。
+学习 Memoh、连接外部系统，或部署你自己的实例。
 
 <DocsHome locale="zh" />

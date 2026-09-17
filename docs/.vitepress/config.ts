@@ -46,9 +46,8 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Guides', link: '/guides/' },
-      { text: 'Integrations', link: '/integrations/' },
-      { text: 'Self-hosted', link: '/self-hosted/' },
+      { text: 'References', link: '/guides/' },
+      { text: 'About', link: '/about.md' },
     ],
 
     logo: {

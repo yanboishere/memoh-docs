@@ -6,9 +6,9 @@ Memoh uses a **Memory Provider** to define how a bot stores, retrieves, and mana
 
 Memoh supports the following memory providers:
 
-- [Built-in](/integrations/providers/memory/builtin.md): The default memory system included with Memoh. Stores a memory graph in PostgreSQL and optionally adds pgvector-backed semantic search when an embedding model is configured.
-- [Mem0](/integrations/providers/memory/mem0.md): SaaS memory provider via the Mem0 API. Requires an API key.
-- [OpenViking](/integrations/providers/memory/openviking.md): Self-hosted or SaaS memory provider with its own API.
+- [Built-in](./builtin.md): The default memory system included with Memoh. Stores a memory graph in PostgreSQL and optionally adds pgvector-backed semantic search when an embedding model is configured.
+- [Mem0](./mem0.md): SaaS memory provider via the Mem0 API. Requires an API key.
+- [OpenViking](./openviking.md): Self-hosted or SaaS memory provider with its own API.
 
 ---
 
@@ -24,7 +24,7 @@ Memoh supports the following memory providers:
 
 ## Next Steps
 
-- [Built-in Memory Provider](/integrations/providers/memory/builtin.md) — Default, self-hosted; PostgreSQL graph plus optional pgvector semantic index.
-- [Mem0 Memory Provider](/integrations/providers/memory/mem0.md) — SaaS via Mem0 API.
-- [OpenViking Memory Provider](/integrations/providers/memory/openviking.md) — Self-hosted or SaaS.
-- [Bot Memory Management](/guides/memory.md) — Manage memory entries after the provider is assigned.
+- [Built-in Memory Provider](./builtin.md) — Default, self-hosted; PostgreSQL graph plus optional pgvector semantic index.
+- [Mem0 Memory Provider](./mem0.md) — SaaS via Mem0 API.
+- [OpenViking Memory Provider](./openviking.md) — Self-hosted or SaaS.
+- [Bot Memory Management](../../../guides/memory.md) — Manage memory entries after the provider is assigned.

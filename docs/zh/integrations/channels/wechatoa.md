@@ -17,13 +17,13 @@
 1. 机器人 **Platforms** → **Add Channel** → **WeChat Official Account**（名称以界面为准）。
 2. 填 **App ID**、**App Secret**、**Token**。
 3. 选 **加解密方式**（与微信后台一致）。
-4. 若用 `safe` / `compatible` 等要密钥的模式，再填 **Encoding AES Key**。
+4. 若用 `safe` / `compat` 等要密钥的模式，再填 **Encoding AES Key**。
 5. 先**保存**渠道。保存后 Memoh 会生成 **URL(服务器配置)** 用的回调地址，复制到微信平台。
 
 ## 3. 在微信平台填回调
 
 1. 把 Memoh 的 **Webhook 回调 URL** 粘到公众号后台「服务器配置」的 URL。
-2. **Token**、**Encoding**、**EncodingAESKey** 两边必须**完全一致**。
+2. **Token**、**加解密方式**、**EncodingAESKey** 两边必须**完全一致**。
 3. 微信会先做一次**验证**，通过后才真正推消息。
 
 ## 4. 启用与试发

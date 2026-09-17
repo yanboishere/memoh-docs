@@ -22,7 +22,7 @@ Gmail 类提供方的 OAuth 应用凭据（client ID / client secret）不再在
 ### 新建
 
 1. **Add Email Provider**
-2. 类型如 **Mailgun**（量大）、**泛用 SMTP**（传统邮局）
+2. 类型如 **Mailgun**（量大）、**泛用 SMTP**（传统邮件服务器）
 3. 按表单填 `domain`/`api_key` 或 `host`/`port` 等
 4. 创建
 
@@ -52,4 +52,4 @@ Gmail 类提供方的 OAuth 应用凭据（client ID / client secret）不再在
 ## 和机器人
 
 - 有权限时可用邮件发报告、回邮、或按新邮件做事。
-- 和聊天一样，是另一条通道，但仍是结构化、可审的。
+- 和聊天一样，是另一条渠道，但仍是结构化、可审的。

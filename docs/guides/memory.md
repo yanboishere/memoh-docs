@@ -6,7 +6,7 @@ Memoh's structured long-term memory system allows bots to remember information a
 
 Before using the **Memory** tab, make sure your bot already has a **Memory Provider** configured.
 
-1. Create a provider from one of the [Memory Providers](/integrations/providers/memory/index.md) (Built-in, Mem0, or OpenViking).
+1. Create a provider from one of the [Memory Providers](../integrations/providers/memory/index.md) (Built-in, Mem0, or OpenViking).
 2. Open your bot's **General** tab.
 3. Select the provider in the **Memory Provider** field.
 4. Click **Save**.
@@ -19,7 +19,7 @@ Without a memory provider, the bot will not have an active memory backend config
 
 Memories are stored and retrieved through the assigned memory provider. Depending on the provider type, retrieval may use the built-in memory graph, pgvector embeddings, or an external API. When a user sends a message, Memoh finds the most relevant memories and includes them in the bot's runtime context.
 
-This page is about **long-term memory**. It is separate from **session context compaction**, which reduces the prompt footprint of a single conversation session. See [Context Compaction](/guides/compaction).
+This page is about **long-term memory**. It is separate from **session context compaction**, which reduces the prompt footprint of a single conversation session. See [Context Compaction](./compaction.md).
 
 ---
 
@@ -55,7 +55,7 @@ Parameters:
 - **Ratio** — Compression ratio such as `0.8`, `0.5`, or `0.3`. Lower values make compaction more aggressive.
 - **Decay Days** — Optionally restrict compaction to older memories only.
 
-This is different from [Context Compaction](/guides/compaction), which compresses the active prompt for one session rather than rewriting stored memories.
+This is different from [Context Compaction](./compaction.md), which compresses the active prompt for one session rather than rewriting stored memories.
 
 ---
 
@@ -110,5 +110,5 @@ If you are trying to shorten the currently active conversation history, use **Co
 
 - The bot automatically searches and retrieves memories during chat.
 - The assigned **Memory Provider** controls the memory backend used by the bot.
-- Provider-specific settings (such as embedding model or API keys) are configured in the provider itself — see [Memory Providers](/integrations/providers/memory/index.md).
+- Provider-specific settings (such as embedding model or API keys) are configured in the provider itself — see [Memory Providers](../integrations/providers/memory/index.md).
 - Memories provide the long-term knowledge that makes each bot unique to its owner.

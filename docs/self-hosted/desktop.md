@@ -2,7 +2,7 @@
 
 Memoh Desktop is the native client for Memoh Cloud or a self-hosted Memoh server. It packages the same Web UI into an Electron shell with native windows, tray, menus, and keyboard integration, and it can register the computer it runs on as a **Computer** that your bots can use.
 
-Desktop does **not** run its own local server or database. You always connect it to a Memoh server: either [Memoh Cloud](https://memoh.ai) or your own [Server Deploy](/self-hosted/docker).
+Desktop does **not** run its own local server or database. You always connect it to a Memoh server: either [Memoh Cloud](https://memoh.ai) or your own [Server Deploy](./docker.md).
 
 ## When to use Desktop
 
@@ -35,7 +35,7 @@ Switching to a different server clears the local sign-in state, so you will auth
 
 Desktop can register the machine it runs on as a **Computer** that server-side bots can work on, without running a separate runtime process. Enable **This computer**, give it a name, and Desktop keeps the connection alive in the background using the embedded Memoh runtime SDK. Credentials are stored with the OS secure storage.
 
-See [Computers](/guides/computers.md) for the permission model, per-bot setup, and what bots can do on a connected computer.
+See [Computers](../guides/computers.md) for the permission model, per-bot setup, and what bots can do on a connected computer.
 
 ## What Desktop manages
 
@@ -44,4 +44,4 @@ See [Computers](/guides/computers.md) for the permission model, per-bot setup, a
 - the connection to the selected server and its cached sign-in state
 - the optional Remote Runtime connection for **This computer**
 
-Everything else (bots, sessions, memory, workspaces, channels) lives on the server you connected to. Workspace runtimes are configured server-side; see [Workspace Backends](/self-hosted/workspace-backends).
+Everything else (bots, sessions, memory, workspaces, channels) lives on the server you connected to. Workspace runtimes are configured server-side; see [Workspace Backends](./workspace-backends.md).

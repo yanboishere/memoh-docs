@@ -48,7 +48,7 @@ When it finishes you should see:
 🔑 Admin login: admin / <your password>
 ```
 
-Read [Server Deploy](/self-hosted/docker) for production hardening, reverse proxies, and upgrades.
+Read [Server Deploy](../self-hosted/docker.md) for production hardening, reverse proxies, and upgrades.
 
 ## Step 2: Sign in
 
@@ -60,7 +60,7 @@ Open `http://<your-server>:8082` and sign in with the admin account you chose du
 2. Pick a template (OpenAI, Anthropic, Gemini, DeepSeek, Zhipu, OpenRouter, Ollama, ...) and paste your API key.
 3. Open the provider and **sync** or add at least one chat model.
 
-Details and client types are in [LLM Providers](/integrations/providers/llm).
+Details and client types are in [LLM Providers](../integrations/providers/llm.md).
 
 ## Step 4: Create your first bot
 
@@ -68,7 +68,7 @@ Details and client types are in [LLM Providers](/integrations/providers/llm).
 2. In the bot's **General** tab choose the chat model you just added.
 3. Click the bot's **Chat** button and say hello. If you get a reply, the pipeline works.
 
-Each bot has its own workspace, memory, and settings; see [Bot](/guides/bot) for every tab.
+Each bot has its own workspace, memory, and settings; see [Bot](./bot.md) for every tab.
 
 ## Step 5: Connect a channel
 
@@ -76,16 +76,16 @@ Each bot has its own workspace, memory, and settings; see [Bot](/guides/bot) for
 2. Pick a platform (Telegram, Discord, Slack, Feishu, DingTalk, WeCom, QQ, LINE, Matrix, Misskey, ...) and paste the platform credentials.
 3. Message the bot from that platform. The first message creates a session; use `/help` to see the available slash commands.
 
-Per-platform setup guides live under [Channels](/integrations/channels/).
+Per-platform setup guides live under [Channels](../integrations/channels/index.md).
 
 ## What's next
 
 | Goal | Read |
 |------|------|
-| Let the bot remember users across sessions | [Memory](/guides/memory) |
-| Run scheduled or recurring tasks | [Schedule](/guides/schedule) |
-| Give the bot files, shell access, and a browser | [Workspace](/guides/container), [Computers](/guides/computers) |
-| Add tools via MCP servers | [MCP](/guides/mcp) |
-| Teach the bot reusable procedures | [Skills](/guides/skills), [Supermarket](/guides/supermarket) |
-| Control who can talk to the bot | [Access Control](/guides/access) |
-| Run everything on a Mac with the desktop app | [Desktop](/self-hosted/desktop) |
+| Let the bot remember users across sessions | [Memory](./memory.md) |
+| Run scheduled or recurring tasks | [Schedule](./schedule.md) |
+| Give the bot files, shell access, and a browser | [Workspace](./container.md), [Computers](./computers.md) |
+| Add tools via MCP servers | [MCP](./mcp.md) |
+| Teach the bot reusable procedures | [Skills](./skills.md), [Supermarket](./supermarket.md) |
+| Control who can talk to the bot | [Access Control](./access.md) |
+| Run everything on a Mac with the desktop app | [Desktop](../self-hosted/desktop.md) |

@@ -6,18 +6,18 @@ Channels connect Memoh bots to messaging platforms. Configure them from the bot 
 
 | Platform | Guide | Notes |
 |----------|-------|-------|
-| Slack | [Slack Configuration](/integrations/channels/slack) | Workspace messaging with threads |
-| Telegram | [Telegram Configuration](/integrations/channels/telegram) | Strong attachment and streaming support |
-| Feishu (Lark) | [Feishu Configuration](/integrations/channels/feishu) | Supports webhook-style inbound mode |
-| Discord | [Discord Configuration](/integrations/channels/discord) | Good fit for communities and servers |
-| QQ | [QQ Configuration](/integrations/channels/qq) | Personal DM oriented |
-| Matrix | [Matrix Configuration](/integrations/channels/matrix) | Decentralized homeserver support |
-| Misskey | [Misskey Configuration](/integrations/channels/misskey) | Replies and reactions, no streaming |
-| DingTalk | [DingTalk Configuration](/integrations/channels/dingtalk) | Enterprise private/group chat |
-| WeCom (WeWork) | [WeCom Configuration](/integrations/channels/wecom) | Enterprise workspace integration |
-| WeChat | [WeChat Configuration](/integrations/channels/weixin) | Personal QR login flow |
-| WeChat Official Account | [WeChat Official Account Configuration](/integrations/channels/wechatoa) | Official account webhook flow |
-| Email | [Email](/guides/email) | SMTP, Mailgun, Gmail OAuth, and related email provider flows |
+| Slack | [Slack Configuration](./slack.md) | Workspace messaging with threads |
+| Telegram | [Telegram Configuration](./telegram.md) | Strong attachment and streaming support |
+| Feishu (Lark) | [Feishu Configuration](./feishu.md) | Supports webhook-style inbound mode |
+| Discord | [Discord Configuration](./discord.md) | Good fit for communities and servers |
+| QQ | [QQ Configuration](./qq.md) | Personal DM oriented |
+| Matrix | [Matrix Configuration](./matrix.md) | Decentralized homeserver support |
+| Misskey | [Misskey Configuration](./misskey.md) | Replies and reactions, no streaming |
+| DingTalk | [DingTalk Configuration](./dingtalk.md) | Enterprise private/group chat |
+| WeCom (WeWork) | [WeCom Configuration](./wecom.md) | Enterprise workspace integration |
+| WeChat | [WeChat Configuration](./weixin.md) | Personal QR login flow |
+| WeChat Official Account | [WeChat Official Account Configuration](./wechatoa.md) | Official account webhook flow |
+| Email | [Email](../../guides/email.md) | SMTP, Mailgun, Gmail OAuth, and related email provider flows |
 | Web | Built-in | Available from the Memoh web interface |
 
 ## WeChat Options

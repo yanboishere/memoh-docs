@@ -38,7 +38,7 @@ Two commands are **top-level** instead of resource groups:
 
 ## Skill Activation And Quick Actions
 
-Besides fixed commands, the slash system can activate the bot's [Skills](/guides/skills.md) on demand:
+Besides fixed commands, the slash system can activate the bot's [Skills](./skills.md) on demand:
 
 ```text
 /<skill-name> [optional prompt]
@@ -155,7 +155,7 @@ Default behavior:
 
 `/new discuss` is not supported in the built-in Web UI local channel. Use a channel adapter such as Telegram or Discord if you want explicit discuss sessions.
 
-See [Sessions](/guides/sessions) for how `chat` and `discuss` differ.
+See [Sessions](./sessions.md) for how `chat` and `discuss` differ.
 
 ### `/stop`
 
@@ -397,4 +397,4 @@ Actions:
 |--------|-------|
 | `run` | `/compact` or `/compact run` |
 
-Use this when the current conversation has grown long and you want Memoh to summarize older turns before continuing. See [Context Compaction](/guides/compaction).
+Use this when the current conversation has grown long and you want Memoh to summarize older turns before continuing. See [Context Compaction](./compaction.md).

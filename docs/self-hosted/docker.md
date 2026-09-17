@@ -2,11 +2,11 @@
 
 Server Deploy is the self-hosted Memoh stack for always-on, multi-user or multi-tenant usage. Use it when Memoh should run on a server, VM, or NAS, or when bots need to keep serving external channels while your desktop is offline.
 
-This page documents the Docker Compose server deployment. For the native local client, see [Desktop Installation](/self-hosted/desktop).
+This page documents the Docker Compose server deployment. For the native local client, see [Desktop Installation](./desktop.md).
 
 The default Compose stack includes PostgreSQL, a pgvector database for memory embeddings, a one-shot migration job, the main server with an explicit workspace backend and in-process AI agent, the channel worker, and the web UI. PostgreSQL is the only supported database.
 
-The official Compose stack uses the `containerd` workspace backend. The server image starts an embedded containerd and mounts the runtime files needed by bot workspaces. For Docker Engine and Apple backends, see [Workspace backends](/self-hosted/workspace-backends.md).
+The official Compose stack uses the `containerd` workspace backend. The server image starts an embedded containerd and mounts the runtime files needed by bot workspaces. For Docker Engine and Apple backends, see [Workspace backends](./workspace-backends.md).
 
 ## Service Architecture
 
@@ -18,10 +18,10 @@ The Docker Compose stack consists of multiple services. Some are always started,
 | **channel** | *(core)* | Channel worker (`memoh-channel`) that owns platform connections and webhooks; talks to the server over internal RPC |
 | **web** | *(core)* | Web UI (Vue 3) |
 | **postgres** | *(core)* | PostgreSQL database (system of record) |
-| **pgvector** | *(core)* | PostgreSQL with `pgvector` used for optional memory embeddings; see [Built-in Memory](/integrations/providers/memory/builtin.md) |
+| **pgvector** | *(core)* | PostgreSQL with `pgvector` used for optional memory embeddings; see [Built-in Memory](../integrations/providers/memory/builtin.md) |
 | **migrate** | *(core, one-shot)* | Runs `memoh-server migrate up` before the server starts |
 | **webhook-tunnel** | `webhook-tunnel` | Optional `cloudflared` quick tunnel that exposes the channel worker's webhook listener to the internet |
-| **connect-it** | `connectors` | Co-hosted [Connect-It](https://github.com/memohai/connect-it) service backing bot [connectors](/guides/connectors.md) (see below) |
+| **connect-it** | `connectors` | Co-hosted [Connect-It](https://github.com/memohai/connect-it) service backing bot [connectors](../guides/connectors.md) (see below) |
 
 
 ## Prerequisites
@@ -152,7 +152,7 @@ Add `--profile connectors` for co-hosted Connect-It and `--profile webhook-tunne
 
 > **Important**: `docker-compose.yml` mounts `./config.toml` by default. You must create this file before starting — running without it will fail.
 
-To enable [connectors](/guides/connectors.md) in a manual deployment, generate the Connect-It credentials yourself and add the `connectors` profile:
+To enable [connectors](../guides/connectors.md) in a manual deployment, generate the Connect-It credentials yourself and add the `connectors` profile:
 
 ```bash
 MEMOH_CONNECT_IT_BASE_URL="http://connect-it:8421" \
@@ -219,7 +219,7 @@ The `config.toml` file controls all server behavior. Here is a summary of the av
 | `[internal_rpc]` | Server/channel-worker RPC targets and shared secret for the split deployment |
 | `[webhook_tunnel]` | Webhook tunnel mode (`disabled` or `external`) and `public_base_url` |
 | `[registry]` | Provider definitions directory |
-| `[connect_it]` | Connect-It endpoint for [connectors](/guides/connectors.md) (`base_url`, `api_token`); both empty disables the feature. The Compose environment overrides these via `MEMOH_CONNECT_IT_BASE_URL` / `MEMOH_CONNECT_IT_API_TOKEN`. |
+| `[connect_it]` | Connect-It endpoint for [connectors](../guides/connectors.md) (`base_url`, `api_token`); both empty disables the feature. The Compose environment overrides these via `MEMOH_CONNECT_IT_BASE_URL` / `MEMOH_CONNECT_IT_API_TOKEN`. |
 | `[web]` | Web frontend host and port |
 | `[agent]` | Tool output truncation limits: `tool_output_max_bytes` (default 65536), `tool_output_max_lines` (default 2000), `system_files_max_bytes` (default 32768). Oversized tool output keeps head and tail instead of being cut off blindly. |
 | `[session_runtime]` | Session-state backend for multi-instance deployments; see [Multi-Instance Deployments](#multi-instance-deployments) |

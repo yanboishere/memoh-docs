@@ -2,7 +2,7 @@
 
 **Context Compaction** reduces the prompt footprint of a single conversation session by summarizing older turns and keeping the active context smaller.
 
-This page is about **session context**, not long-term memory storage. If you want to merge or rewrite stored memories in a memory provider, see [Bot Memory Management](/guides/memory).
+This page is about **session context**, not long-term memory storage. If you want to merge or rewrite stored memories in a memory provider, see [Bot Memory Management](./memory.md).
 
 ---
 
@@ -14,7 +14,7 @@ New bots ship with automatic context compaction **enabled and zero-config**. You
 - If a session grows past about **75%** before the background pass catches up, Memoh compacts **synchronously** before sending the next turn.
 - Either path aims to bring the raw history back down to about **40%** of the window.
 
-The only real prerequisite: the bot's chat model must declare a `context_window` in its model settings. Without it, the automatic policy has no budget to work against and never triggers. See [Providers And Models](/integrations/providers/llm.md).
+The only real prerequisite: the bot's chat model must declare a `context_window` in its model settings. Without it, the automatic policy has no budget to work against and never triggers. See [Providers And Models](../integrations/providers/llm.md).
 
 Bots created before this default changed keep their stored settings and behave as configured (see legacy mode below).
 
@@ -132,6 +132,6 @@ Use **Memory Compaction** when the bot's stored memories themselves have become 
 
 ## Next Steps
 
-- To inspect session runtime information, see [Sessions](/guides/sessions).
-- To understand slash-triggered compaction, see [Slash Commands](/guides/slash-commands).
-- To manage long-term memory instead of session context, see [Bot Memory Management](/guides/memory).
+- To inspect session runtime information, see [Sessions](./sessions.md).
+- To understand slash-triggered compaction, see [Slash Commands](./slash-commands.md).
+- To manage long-term memory instead of session context, see [Bot Memory Management](./memory.md).

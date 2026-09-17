@@ -14,7 +14,7 @@ Sessions are scoped per bot — each bot manages its own set of sessions indepen
 
 ## Session Types
 
-Memoh uses six session types to separate different kinds of bot activity:
+Memoh uses five session types to separate different kinds of bot activity:
 
 | Type | Description |
 |------|-------------|
@@ -129,7 +129,7 @@ Key fields include:
 - **Cache Read / Cache Write** — token counts associated with caching
 - **Skills** — effective skills used by the session
 
-The panel also exposes **Compact Now**, which triggers immediate [Context Compaction](/guides/compaction) for the current session.
+The panel also exposes **Compact Now**, which triggers immediate [Context Compaction](./compaction.md) for the current session.
 
 ---
 

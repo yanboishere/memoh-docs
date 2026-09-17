@@ -66,7 +66,7 @@ Hermes 用 toolkit 里 pin 死的运行时，不自动升级。
 
 ## 附件
 
-ACP 智能体会话现在支持消息附件：
+ACP 智能体会话支持消息附件：
 
 - **图片**：智能体声明支持图片输入时原生发送；不支持时若图片有 workspace 路径可引用，自动降级为文件引用。
 - **文件**、长文本粘贴、引用/回复消息里带的附件，以 workspace 路径或公开 URL 的形式传给智能体。
@@ -90,7 +90,7 @@ ACP 工作使用 `acp_agent` 会话类型，由 Agents/ACP 工作流创建和管
 
 ## 相关页面
 
-- [机器人](/zh/guides/bot.md)
-- [会话](/zh/guides/sessions.md)
-- [文件](/zh/guides/files.md)
-- [提供方与模型](/zh/integrations/providers/llm.md)
+- [机器人](./bot.md)
+- [会话](./sessions.md)
+- [文件](./files.md)
+- [模型服务商与模型](../integrations/providers/llm.md)

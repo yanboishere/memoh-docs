@@ -1,4 +1,4 @@
-# Workspace 与容器
+# 工作区（Workspace）与容器
 
 每个机器人都在一个 workspace 里工作。Server Deploy 里通常是隔离容器、Pod 或类似 VM 的 runtime；在受信任的 Desktop/local 场景里，也可以是宿主机上的本地目录。workspace 提供文件系统、命令执行环境、MCP runtime，以及可选的图形桌面。
 
@@ -14,9 +14,9 @@
 
 workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`uv` 都在 PATH 上），机器人跑 Python 脚本、装包不用先折腾解释器。
 
-机器人还可以在 server workspace 之外、你接入的机器上干活——见 [电脑（远程 Runtime）](/zh/guides/computers.md)。
+机器人还可以在 server workspace 之外、你接入的机器上干活——见 [电脑（远程 Runtime）](./computers.md)。
 
-底层容器 runtime 由 `config.toml` 的 `[container].backend` 决定，trusted local workspace 另行控制。官方 Docker Compose Server Deploy 使用 `containerd`；Docker Engine、Apple 和 local workspace 的差异见 [Workspace backend](/zh/self-hosted/workspace-backends)。
+底层容器 runtime 由 `config.toml` 的 `[container].backend` 决定，trusted local workspace 另行控制。官方 Docker Compose Server Deploy 使用 `containerd`；Docker Engine、Apple 和 local workspace 的差异见 [Workspace backend](../self-hosted/workspace-backends.md)。
 
 ## Workspace 相关 tab
 
@@ -48,7 +48,7 @@ workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`u
 
 **Desktop** tab 用来准备和检查图形 workspace runtime。它会检查 desktop toolkit、Xvnc/VNC、浏览器和当前 display session。
 
-启用后，workspace 可以在容器里跑有头 Chrome/Chromium。网页端 Display pane 会连接到同一个桌面会话，你和 agent 看到、操作的是同一个可见浏览器。工具层面的区别见 [Browser / Computer Use](/zh/guides/browser-computer-use)。
+启用后，workspace 可以在容器里跑有头 Chrome/Chromium。网页端 Display pane 会连接到同一个桌面会话，你和 agent 看到、操作的是同一个可见浏览器。工具层面的区别见 [Browser / Computer Use](./browser-computer-use.md)。
 
 ## 运行时信息
 
@@ -96,7 +96,7 @@ workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`u
 ### 注意
 
 - CDI 在**创建**时生效，改配置后常要**重建**容器；只停再起**不会**换已挂设备。
-- 镜像里仍要装对的用户态库，才能真跑算子。
+- 镜像里仍要装对的用户态库和工具，才能真正跑 CUDA/ROCm 软件。
 - 建好后 **Container** tab 会显示当前挂上的设备，便于核对。
 
 ## 快照
@@ -109,7 +109,7 @@ workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`u
 
 - **Export Data**：把 workspace 文件系统数据打成包下载。
 - **Import Data**：从本地上传归档并解进 workspace 文件系统。
-- **Restore**：在数据目录侧做“清到干净再灌”，适合盘坏了或想从零来而又不删 runtime 实例时。
+- **Restore**：把数据目录重置到干净状态，适合文件系统损坏或想从零开始而又不重建 runtime 实例时。
 
 ## 版本
 

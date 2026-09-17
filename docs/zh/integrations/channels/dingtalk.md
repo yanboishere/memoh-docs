@@ -14,7 +14,7 @@
 2. 填 **App Key**、**App Secret**。
 3. **Save and Enable**。
 
-Memoh 会维护与钉钉的 **stream 长连接**。常规部署**不用**你再去配一层 webhook 回调地址（与飞书公众号那种不同）。
+Memoh 会维护与钉钉的 **stream 长连接**。常规部署**不用**你再去配一层 webhook 回调地址（与飞书、微信公众号那种 webhook 模式不同）。
 
 ## 3. 验证
 

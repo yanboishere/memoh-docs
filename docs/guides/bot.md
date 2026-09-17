@@ -58,11 +58,11 @@ After creating a bot, the most important step is configuring its runtime setting
 
 If you have not created these resources yet, set them up first:
 
-- [Providers And Models](/integrations/providers/llm)
-- [Built-in Memory Provider](/integrations/providers/memory/builtin.md)
-- [Search Providers](/integrations/providers/web-search)
-- [TTS Providers](/integrations/providers/tts/index.md)
-- [Agents / ACP](/guides/acp.md)
+- [Providers And Models](../integrations/providers/llm.md)
+- [Built-in Memory Provider](../integrations/providers/memory/builtin.md)
+- [Search Providers](../integrations/providers/web-search.md)
+- [TTS Providers](../integrations/providers/tts/index.md)
+- [Agents / ACP](./acp.md)
 
 ---
 
@@ -85,8 +85,8 @@ The **General** tab contains the settings that shape everyday conversation behav
 Notes:
 
 - The **Image Generation Model** is intentionally separate from the normal chat model so you can dedicate an image-capable model only to visual generation tasks.
-- The **TTS Model** comes from the [TTS Providers](/integrations/providers/tts/index.md) system and uses `speech` models from the configured speech provider.
-- The selected chat model's `context_window` influences session status reporting and [Context Compaction](/guides/compaction).
+- The **TTS Model** comes from the [TTS Providers](../integrations/providers/tts/index.md) system and uses `speech` models from the configured speech provider.
+- The selected chat model's `context_window` influences session status reporting and [Context Compaction](./compaction.md).
 
 ---
 
@@ -103,7 +103,7 @@ Compaction is now about **session context compaction**, not memory maintenance.
 
 The Compaction tab also exposes compaction logs so you can see recent successful, pending, or failed runs.
 
-For the runtime behavior, see [Context Compaction](/guides/compaction).
+For the runtime behavior, see [Context Compaction](./compaction.md).
 
 ---
 
@@ -122,7 +122,7 @@ Use the **Access** tab to refine conversation, group, and thread rules after the
 
 ## Discuss-Related Advanced Settings
 
-Most users only need the `chat` and `discuss` behavior described in [Sessions](/guides/sessions).
+Most users only need the `chat` and `discuss` behavior described in [Sessions](./sessions.md).
 
 If you manage bot settings through the API or custom automation, the settings schema also includes `discuss_probe_model_id` for discuss-mode specific setups. Treat it as an advanced setting rather than a required field for normal bot creation.
 
@@ -136,7 +136,7 @@ Workspace files and terminals are available from the chat workspace UI after the
 - Open terminal sessions inside the workspace runtime.
 - Use display/browser tools when the bot workspace has display support enabled.
 
-For file workflows, see [Files](/guides/files.md). For headed browser and desktop workflows, see [Browser / Computer Use](/guides/browser-computer-use.md).
+For file workflows, see [Files](./files.md). For headed browser and desktop workflows, see [Browser / Computer Use](./browser-computer-use.md).
 
 ---
 

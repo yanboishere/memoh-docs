@@ -22,9 +22,9 @@
 | Tab | 内容 |
 |-----|------|
 | **Overview** | workspace runtime、库、渠道、记忆等健康检查 |
-| **General** | 主模型/标题/生图、记忆/搜索/浏览器/TTS、时区、语言、推理、危险区 |
+| **General** | 主模型/标题/生图、记忆/搜索/TTS 绑定、时区、语言、推理、危险区 |
 | **Desktop** | Workspace display runtime、有头浏览器、实时 display session |
-| **Computers** | 远程运行时（运行 Memoh runtime 的自有机器），机器人可在其上读写文件、执行命令 |
+| **电脑** | 远程运行时（运行 Memoh runtime 的自有机器），机器人可在其上读写文件、执行命令 |
 | **Workspace** | 容器型 workspace 起停、快照、导入导出 |
 | **Network** | Workspace 网络与 overlay provider 状态/动作 |
 | **Memory** | 浏览、搜、建、改、压记忆 |
@@ -32,7 +32,7 @@
 | **Access** | ACL 与默认通过/拒绝 |
 | **Tool Approval** | 需要人类确认的工具审批设置 |
 | **Agents** | 可为聊天 workspace 启用的 ACP 兼容编码智能体，如 Codex、Claude Code |
-| **Email** | 邮服绑定、发件箱 |
+| **Email** | 邮箱绑定、发件箱 |
 | **Connectors** | 经 Connect-It 连接的第三方服务（OAuth 或 API Key）：状态、启停、重新授权、断开 |
 | **Hooks** | 保存在 `/data/.memoh/hooks.json` 的机器人自动化规则 |
 | **MCP** | 连接（Stdio/Remote/OAuth） |
@@ -53,11 +53,11 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 
 若这些资源还没有，先建好：
 
-- [供应商与模型](/zh/integrations/providers/llm)
-- [内置记忆提供方](/zh/integrations/providers/memory/builtin.md)（如用）
-- [搜索提供方](/zh/integrations/providers/web-search)
-- [TTS 提供方](/zh/integrations/providers/tts/index)
-- [Agents / ACP](/zh/guides/acp.md)
+- [模型服务商与模型](../integrations/providers/llm.md)
+- [内置记忆提供方](../integrations/providers/memory/builtin.md)（如用）
+- [搜索提供方](../integrations/providers/web-search.md)
+- [TTS 提供方](../integrations/providers/tts/index.md)
+- [Agents / ACP](./acp.md)
 
 ---
 
@@ -70,7 +70,7 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 | **Image Generation Model** | 可选，需带 `image-output` 的聊天模型 |
 | **Memory Provider** | 长期记忆后端；内置类型还可自带记忆/向量模型 |
 | **Search Provider** | 联网搜索用哪家 |
-| **TTS Model** | 来自 TTS 流，不是普通 chat 供应商里选 |
+| **TTS Model** | 来自 TTS 提供方流程，不在普通 chat 模型服务商里选 |
 | **Timezone** | 不填则用户时区再落到系统 |
 | **Language** | 机器人主用语 |
 | **Reasoning Effort** | 当前 chat 模型有 `reasoning` 时可用；可选值随模型而定（如 `low` / `medium` / `high`） |
@@ -78,8 +78,8 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 注意：
 
 - **生图模型** 故意与主聊天模型分开，好单独换「更擅长出图」的。
-- **TTS** 在 [TTS 提供方](/zh/integrations/providers/tts/index.md) 里用所配置语音提供方的 `speech` 模型。
-- `context_window` 会影响状态栏展示和 [会话压缩](/zh/guides/compaction.md) 的体感。
+- **TTS** 在 [TTS 提供方](../integrations/providers/tts/index.md) 里用所配置语音提供方的 `speech` 模型。
+- 所选聊天模型的 `context_window` 会影响会话状态展示和 [会话压缩](./compaction.md)。
 
 ---
 
@@ -94,7 +94,7 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 | **Compaction Ratio** | 压多狠 |
 | **Compaction Model** | 可选，专门做摘要的模型 |
 
-细节见 [会话上下文压缩](/zh/guides/compaction.md)。
+细节见 [会话上下文压缩](./compaction.md)。
 
 ---
 
@@ -102,7 +102,7 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 
 创建时先给一个 **ACL 预设**，之后在 **Access** 里微调。**预设** 给一版默认策略，**Default Effect** 管「没命中规则时」放行还是挡。
 
-[会话](/zh/guides/sessions.md) 与 Discuss 的默认行为在那一页。若你用 API/自动化，配置里还可能有 `discuss_probe_model_id` 等进阶项，日常创建不必先动。
+[会话](./sessions.md) 与 Discuss 的默认行为在那一页。若你用 API/自动化，配置里还可能有 `discuss_probe_model_id` 等进阶项，日常创建不必先动。
 
 ---
 
@@ -114,7 +114,7 @@ Workspace 文件和终端在聊天 workspace UI 里使用；前提是该机器�
 - 打开 workspace 内的终端会话
 - 在开启 display 后使用浏览器/桌面相关工具
 
-文件流程见 [文件](/zh/guides/files.md)，有头浏览器和桌面操作见 [Browser / Computer Use](/zh/guides/browser-computer-use.md)。
+文件流程见 [文件](./files.md)，有头浏览器和桌面操作见 [Browser / Computer Use](./browser-computer-use.md)。
 
 ---
 

@@ -16,7 +16,7 @@ Agent 本体不挪窝。模型调用、聊天、会话、记忆全在 Memoh serv
 
 ### 命令行方式
 
-1. 打开 Web UI 设置里的 **Computers** 页。
+1. 打开 Web UI 设置里的 **电脑** 页。
 2. 创建一个 runtime key（形如 `mrk_...`；任何登录用户都能建，电脑归创建 key 的用户所有）。
 3. 在要接入的电脑上跑页面生成的命令（Node.js 20+）：
 
@@ -72,6 +72,6 @@ Memoh Desktop 内置了这个能力：打开**这台电脑**开关、起个名�
 
 ## 相关页面
 
-- [Workspace](/zh/guides/container.md)
-- [Browser / Computer Use](/zh/guides/browser-computer-use.md)
-- [自托管总览](/zh/self-hosted/index.md)
+- [Workspace](./container.md)
+- [Browser / Computer Use](./browser-computer-use.md)
+- [自托管总览](../self-hosted/index.md)

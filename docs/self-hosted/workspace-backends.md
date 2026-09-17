@@ -90,7 +90,7 @@ Container workspaces can provide a display runtime: Xvnc/RFB for the workspace d
 
 Use this path when a site needs a real graphical browser. Headless Playwright remains available as an ordinary workspace command, but Browser Use and Computer Use target the headed workspace desktop.
 
-Local workspaces do not provide the same container desktop isolation. Use [Browser / Computer Use](/guides/browser-computer-use) for the tool-level model.
+Local workspaces do not provide the same container desktop isolation. Use [Browser / Computer Use](../guides/browser-computer-use.md) for the tool-level model.
 
 ## Networking and overlays
 

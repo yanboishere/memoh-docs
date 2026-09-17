@@ -267,5 +267,5 @@ Hooks are powerful. Treat them like code that runs inside the bot workspace.
 
 ## Related Pages
 
-- [Bot Management](/guides/bot.md)
-- [Skills](/guides/skills.md)
+- [Bot Management](./bot.md)
+- [Skills](./skills.md)
