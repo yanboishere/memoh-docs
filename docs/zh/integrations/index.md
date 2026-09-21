@@ -4,7 +4,7 @@
 
 ## 渠道
 
-渠道让机器人可以在网页端之外被访问。
+渠道让机器人在 Memoh 客户端之外也能被访问。
 
 - **[渠道总览](/zh/integrations/channels/)**：支持的平台和通用配置流程。
 - **[Slack](/zh/integrations/channels/slack)**、**[Telegram](/zh/integrations/channels/telegram)**、**[飞书](/zh/integrations/channels/feishu)**、**[Discord](/zh/integrations/channels/discord)**、**[微信](/zh/integrations/channels/weixin)** 等。

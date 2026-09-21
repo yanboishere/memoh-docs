@@ -16,7 +16,7 @@ Compose 里有多组服务。有的默认就起，有的通过 `--profile` 打�
 |------|---------|------|
 | **server** | *（核心）* | 主服务，使用配置中的容器运行时后端，智能体同进程 |
 | **channel** | *（核心）* | 渠道 worker（`memoh-channel`），持有各平台连接与 webhook，通过内部 RPC 与主服务通信 |
-| **web** | *（核心）* | 网页端（Vue 3） |
+| **web** | *（核心）* | 网页客户端（Vue 3） |
 | **postgres** | *（核心）* | PostgreSQL（主数据） |
 | **pgvector** | *（核心）* | 带 `pgvector` 的 PostgreSQL，供可选的记忆向量使用；见 [内置记忆](../integrations/providers/memory/builtin.md) |
 | **migrate** | *（核心，一次性）* | 在主服务启动前执行 `memoh-server migrate up` |

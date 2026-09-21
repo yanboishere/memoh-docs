@@ -1,6 +1,6 @@
 # Channels
 
-Channels connect Memoh bots to messaging platforms. Configure them from the bot **Platforms** tab so users can talk to the same bot through Slack, Telegram, Feishu, Discord, WeChat, Email, the web UI, and other surfaces.
+Channels connect Memoh bots to messaging platforms. Configure them from the bot **Platforms** tab so users can talk to the same bot through Slack, Telegram, Feishu, Discord, WeChat, and other platforms, as well as directly in the Memoh app.
 
 ## Supported Channels
 

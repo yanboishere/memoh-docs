@@ -15,16 +15,7 @@ const references = [
       { text: 'Sessions', link: '/guides/sessions.md' },
       { text: 'Files', link: '/guides/files.md' },
       { text: 'Slash Commands', link: '/guides/slash-commands.md' },
-      {
-        text: 'Deployment',
-        collapsed: true,
-        items: [
-          { text: 'Server Deploy', link: '/self-hosted/docker.md' },
-          { text: 'Desktop', link: '/self-hosted/desktop.md' },
-          { text: 'Workspace Backends', link: '/self-hosted/workspace-backends.md' },
-          { text: 'Overview', link: '/self-hosted/' },
-        ],
-      },
+      { text: 'Desktop App', link: '/self-hosted/desktop.md' },
       {
         text: 'Channels',
         collapsed: true,

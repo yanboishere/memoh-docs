@@ -84,7 +84,7 @@ ACP 智能体会话支持消息附件：
 
 ## ACP Agent 会话
 
-ACP 工作使用 `acp_agent` 会话类型，由 Agents/ACP 工作流创建和管理，不走普通 `/new chat` / `/new discuss` 路由。网页端可以按 `acp_agent` 过滤，把编码工作和日常对话分开看。
+ACP 工作使用 `acp_agent` 会话类型，由 Agents/ACP 工作流创建和管理，不走普通 `/new chat` / `/new discuss` 路由。客户端里可以按 `acp_agent` 过滤，把编码工作和日常对话分开看。
 
 ---
 

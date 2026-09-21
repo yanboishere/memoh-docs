@@ -48,7 +48,7 @@ workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`u
 
 **Desktop** tab 用来准备和检查图形 workspace runtime。它会检查 desktop toolkit、Xvnc/VNC、浏览器和当前 display session。
 
-启用后，workspace 可以在容器里跑有头 Chrome/Chromium。网页端 Display pane 会连接到同一个桌面会话，你和 agent 看到、操作的是同一个可见浏览器。工具层面的区别见 [Browser / Computer Use](./browser-computer-use.md)。
+启用后，workspace 可以在容器里跑有头 Chrome/Chromium。客户端的 **桌面** 面板会连接到同一个桌面会话，你和 agent 看到、操作的是同一个可见浏览器。工具层面的区别见 [Browser / Computer Use](./browser-computer-use.md)。
 
 ## 运行时信息
 

@@ -86,7 +86,7 @@ Apple backend 用于通过 socktainer 和 Apple Containerization 做 macOS 本�
 
 ## Display、Browser Use 与 Computer Use
 
-容器 workspace 可以提供 display runtime：Xvnc/RFB 作为 workspace 桌面显示与输入基础，有头 Chrome/Chromium 提供 CDP，网页端 Display pane 通过 WebRTC 打开会话。
+容器 workspace 可以提供 display runtime：Xvnc/RFB 作为 workspace 桌面显示与输入基础，有头 Chrome/Chromium 提供 CDP，客户端的 **桌面** 面板通过 WebRTC 打开会话。
 
 当网站需要真实图形浏览器时，用这条路径。Headless Playwright 仍然可以作为普通 workspace 命令运行，但 Browser Use 和 Computer Use 面向的是有头 workspace 桌面。
 

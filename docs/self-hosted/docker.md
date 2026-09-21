@@ -4,7 +4,7 @@ Server Deploy is the self-hosted Memoh stack for always-on, multi-user or multi-
 
 This page documents the Docker Compose server deployment. For the native local client, see [Desktop Installation](./desktop.md).
 
-The default Compose stack includes PostgreSQL, a pgvector database for memory embeddings, a one-shot migration job, the main server with an explicit workspace backend and in-process AI agent, the channel worker, and the web UI. PostgreSQL is the only supported database.
+The default Compose stack includes PostgreSQL, a pgvector database for memory embeddings, a one-shot migration job, the main server with an explicit workspace backend and in-process AI agent, the channel worker, and the web client. PostgreSQL is the only supported database.
 
 The official Compose stack uses the `containerd` workspace backend. The server image starts an embedded containerd and mounts the runtime files needed by bot workspaces. For Docker Engine and Apple backends, see [Workspace backends](./workspace-backends.md).
 
@@ -16,7 +16,7 @@ The Docker Compose stack consists of multiple services. Some are always started,
 |---------|---------|-------------|
 | **server** | *(core)* | Main Memoh server with the configured container runtime backend and in-process AI agent |
 | **channel** | *(core)* | Channel worker (`memoh-channel`) that owns platform connections and webhooks; talks to the server over internal RPC |
-| **web** | *(core)* | Web UI (Vue 3) |
+| **web** | *(core)* | Web client (Vue 3) |
 | **postgres** | *(core)* | PostgreSQL database (system of record) |
 | **pgvector** | *(core)* | PostgreSQL with `pgvector` used for optional memory embeddings; see [Built-in Memory](../integrations/providers/memory/builtin.md) |
 | **migrate** | *(core, one-shot)* | Runs `memoh-server migrate up` before the server starts |
@@ -190,7 +190,7 @@ After startup:
 
 | Service         | URL                    |
 |-----------------|------------------------|
-| Web UI          | http://localhost:8082  |
+| Web client      | http://localhost:8082  |
 | API             | http://localhost:8080  |
 | Connect-It admin console *(with the `connectors` profile)* | http://localhost:8421 |
 

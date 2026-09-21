@@ -21,7 +21,6 @@ export default defineConfig({
         nav: [
           { text: 'Guides', link: '/guides/' },
           { text: 'Integrations', link: '/integrations/' },
-          { text: 'Self-hosted', link: '/self-hosted/' },
         ],
       },
     },
@@ -32,7 +31,6 @@ export default defineConfig({
         nav: [
           { text: '教程', link: '/zh/guides/' },
           { text: '集成', link: '/zh/integrations/' },
-          { text: '自托管', link: '/zh/self-hosted/' },
         ],
       },
     }

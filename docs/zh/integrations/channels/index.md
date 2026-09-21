@@ -1,6 +1,6 @@
 # 渠道
 
-渠道把 Memoh 机器人接到消息平台。你可以在机器人 **Platforms** tab 里配置，让同一个机器人通过 Slack、Telegram、飞书、Discord、微信、邮件、网页端等入口被访问。
+渠道把 Memoh 机器人接到消息平台。你可以在机器人 **平台** 标签页里配置，让同一个机器人通过 Slack、Telegram、飞书、Discord、微信等平台被访问，也可以直接在 Memoh 客户端里聊。
 
 ## 支持的渠道
 
@@ -18,7 +18,7 @@
 | 微信 | [微信](./weixin.md) | 个人扫码登录 |
 | 微信公众号 | [微信公众号](./wechatoa.md) | 公众号 webhook |
 | 邮件 | [邮件](../../guides/email.md) | SMTP、Mailgun、Gmail OAuth 等邮件流程 |
-| Web | 内置 | Memoh 网页端自带 |
+| Web | 内置 | Memoh 客户端自带 |
 
 ## 微信选项
 

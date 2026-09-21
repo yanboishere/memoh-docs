@@ -226,4 +226,4 @@ Memoh 用来：
 
 - 给机器人绑聊天、生图、记忆、朗读等：[机器人](../../guides/bot.md)
 - 配语音提供方与语音模型：[TTS 提供方](./tts/index.md)
-- 配语音转文字：打开 Web UI 的 Transcription 设置页
+- 配语音转文字：打开客户端的 Transcription 设置页

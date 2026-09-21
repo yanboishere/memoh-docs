@@ -22,7 +22,7 @@ Outbound images are also fetched by LINE's servers from your deployment, so the 
 
 ## Step 2: Configure Memoh
 
-1. Go to your Bot's **Platforms** tab in the Memoh Web UI.
+1. Go to your Bot's **Platforms** tab in the Memoh app.
 2. Click **Add Channel** and select **LINE**.
 3. Paste your **Channel Secret** and **Channel Access Token**.
 4. Click **Save** (or **Save and Enable**). The webhook callback URL is generated only after the configuration is saved.

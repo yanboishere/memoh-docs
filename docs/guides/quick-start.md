@@ -1,91 +1,62 @@
 # Quick Start
 
-Get a working Memoh in about ten minutes: deploy the server, sign in, add a model provider, create your first bot, and connect it to a chat channel.
-
-::: tip Prefer not to self-host?
-[Memoh Cloud](https://memoh.ai) runs the same product as a hosted service. Skip to [Step 3](#step-3-add-a-model-provider) once you have signed in.
-:::
+Go from nothing to a working bot in about ten minutes: install the app, sign in, create your first bot, and reach it from a chat platform.
 
 ## Prerequisites
 
-- A Linux server or workstation with **Docker** and **Docker Compose** installed.
-- An API key for at least one LLM provider (OpenAI, Anthropic, DeepSeek, Zhipu, ...) or a local Ollama instance.
-- Ports **8080** (API) and **8082** (Web UI) reachable from your browser.
+- A computer running macOS, Windows, or Linux.
+- A [Memoh Cloud](https://app.memoh.net) account — you can create one during sign-in.
 
-## Step 1: Deploy the server
+That is all. Memoh Cloud comes with hosted models (DeepSeek, Kimi, GPT, Claude, and more), so you do not need an API key to start.
 
-The one-line installer pulls the images, generates a `config.toml`, and starts everything with Docker Compose:
+## Step 1: Install Memoh
 
-```bash
-curl -fsSL https://memoh.sh | sh
-```
-
-Users in mainland China can enable the mirror:
-
-```bash
-curl -fsSL https://memoh.sh | USE_CN_MIRROR=true sh
-```
-
-::: warning Do not run the whole installer with `sudo`
-The installer will call `sudo docker` on its own when your user is not in the `docker` group.
-:::
-
-Prefer to do it by hand? Clone the repository and run:
-
-```bash
-git clone https://github.com/felinics/Memoh.git
-cd Memoh
-cp conf/app.docker.toml config.toml
-# edit config.toml (admin password, JWT secret, ...)
-docker compose up -d
-```
-
-When it finishes you should see:
-
-```text
-🌐 Web UI:      http://localhost:8082
-🔌 API:         http://localhost:8080
-🔑 Admin login: admin / <your password>
-```
-
-Read [Server Deploy](../self-hosted/docker.md) for production hardening, reverse proxies, and upgrades.
+Download the app for your platform from the [download page](https://memoh.ai/desktop) — macOS (DMG), Windows (installer), or Linux (AppImage/deb/rpm) — and open it.
 
 ## Step 2: Sign in
 
-Open `http://<your-server>:8082` and sign in with the admin account you chose during install (the default in `conf/app.docker.toml` is `admin` / `admin123`). Change the password right away under **Settings → Account**.
+On the connect screen, choose **Memoh Cloud** and sign in, or create an account.
 
-## Step 3: Add a model provider
+::: tip Joining a team?
+If your team already uses Memoh, enter the address your administrator gave you instead, then sign in with the account they issued.
+:::
 
-1. Go to **Providers** in the sidebar and click **Add Provider**.
-2. Pick a template (OpenAI, Anthropic, Gemini, DeepSeek, Zhipu, OpenRouter, Ollama, ...) and paste your API key.
-3. Open the provider and **sync** or add at least one chat model.
-
-Details and client types are in [LLM Providers](../integrations/providers/llm.md).
-
-## Step 4: Create your first bot
+## Step 3: Create your first bot
 
 1. Go to **Bots → New Bot**, give it a name and a display name.
-2. In the bot's **General** tab choose the chat model you just added.
-3. Click the bot's **Chat** button and say hello. If you get a reply, the pipeline works.
+2. On the bot's **General** tab, pick its chat model. Hosted models are ready to use; to bring your own API key instead, see [LLM Providers](../integrations/providers/llm.md).
+3. Click the bot's **Chat** button and say hello. A reply confirms everything works.
 
 Each bot has its own workspace, memory, and settings; see [Bot](./bot.md) for every tab.
 
-## Step 5: Connect a channel
+## Step 4: Give it a real task
 
-1. Open the bot's **Channels** tab and click **Add**.
-2. Pick a platform (Telegram, Discord, Slack, Feishu, DingTalk, WeCom, QQ, LINE, Matrix, Misskey, ...) and paste the platform credentials.
-3. Message the bot from that platform. The first message creates a session; use `/help` to see the available slash commands.
+A bot is more than a chat window — it has a workspace with a real filesystem and terminal. Upload any document in the chat and try:
 
-Per-platform setup guides live under [Channels](../integrations/channels/index.md).
+```text
+Summarize this document into five key points and save the summary
+as summary.md in your workspace. Do not modify the original file.
+```
+
+The bot reads the file, writes the result into its workspace, and reports back. Browse what it produced under **Files**.
+
+## Step 5: Reach it from a chat platform
+
+1. Open the bot's **Platforms** tab and click **Add**.
+2. Pick a platform — Telegram, Slack, Discord, Feishu, DingTalk, WeCom, WeChat, QQ, LINE, and more — and paste that platform's credentials.
+3. Message the bot from that platform. The first message creates a session; send `/help` to see the available slash commands.
+
+From then on you can hand off a task from your phone and collect the result in the same conversation. Per-platform setup guides live under [Channels](../integrations/channels/index.md).
 
 ## What's next
 
 | Goal | Read |
 |------|------|
+| Take the full tour: instructions, tasks, workspace, browser | [Get Started](./get-started.md) |
 | Let the bot remember users across sessions | [Memory](./memory.md) |
 | Run scheduled or recurring tasks | [Schedule](./schedule.md) |
-| Give the bot files, shell access, and a browser | [Workspace](./container.md), [Computers](./computers.md) |
+| Give the bot files, shell access, and a browser | [Workspace](./container.md) |
+| Let bots work on this computer | [Computers](./computers.md) |
 | Add tools via MCP servers | [MCP](./mcp.md) |
 | Teach the bot reusable procedures | [Skills](./skills.md), [Supermarket](./supermarket.md) |
 | Control who can talk to the bot | [Access Control](./access.md) |
-| Run everything on a Mac with the desktop app | [Desktop](../self-hosted/desktop.md) |

@@ -4,7 +4,7 @@ Integrations connect Memoh to external systems. Use this section when you want a
 
 ## Channels
 
-Channels make bots reachable outside the web app.
+Channels make bots reachable outside the Memoh app.
 
 - **[Channels Overview](/integrations/channels/)**: Supported platforms and general setup flow.
 - **[Slack](/integrations/channels/slack)**, **[Telegram](/integrations/channels/telegram)**, **[Feishu](/integrations/channels/feishu)**, **[Discord](/integrations/channels/discord)**, **[WeChat](/integrations/channels/weixin)**, and more.

@@ -15,16 +15,7 @@ const references = [
       { text: '会话', link: '/zh/guides/sessions.md' },
       { text: '文件', link: '/zh/guides/files.md' },
       { text: '斜杠命令', link: '/zh/guides/slash-commands.md' },
-      {
-        text: '部署',
-        collapsed: true,
-        items: [
-          { text: '服务器部署', link: '/zh/self-hosted/docker.md' },
-          { text: 'Desktop 桌面版', link: '/zh/self-hosted/desktop.md' },
-          { text: '工作区后端', link: '/zh/self-hosted/workspace-backends.md' },
-          { text: '总览', link: '/zh/self-hosted/' },
-        ],
-      },
+      { text: '桌面客户端', link: '/zh/self-hosted/desktop.md' },
       {
         text: '渠道',
         collapsed: true,

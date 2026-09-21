@@ -7,7 +7,7 @@ To use Memoh effectively, you usually configure:
 - optional **speech providers** if you want text-to-speech
 - optional **transcription providers** if you want speech-to-text
 
-The Web UI manages chat and embedding providers/models from the **Models** page. Speech models are managed from [TTS Providers](./tts/index.md), and transcription models are managed from the Transcription settings page.
+Chat and embedding providers/models are managed from the **Models** page in the app. Speech models are managed from [TTS Providers](./tts/index.md), and transcription models are managed from the Transcription settings page.
 
 ---
 
@@ -185,7 +185,7 @@ If a model supports reasoning, it may also declare `reasoning_efforts` such as `
 
 `context_window` is important because Memoh uses it to:
 
-- calculate session context usage in the Web UI
+- calculate session context usage in the app
 - power `/status` output
 - decide when a session is approaching its prompt limit
 - guide [Context Compaction](../../guides/compaction.md)
@@ -258,4 +258,4 @@ You do not need to force one model to do everything.
 
 - To assign chat, image, memory, and TTS settings to a bot, see [Bot Management](../../guides/bot.md).
 - To configure speech providers and speech models, see [TTS Providers](./tts/index.md).
-- To configure speech-to-text, open the Transcription settings page in the Web UI.
+- To configure speech-to-text, open the Transcription settings page in the app.

@@ -1,6 +1,6 @@
 # Desktop
 
-Memoh Desktop is the native client for Memoh Cloud or a self-hosted Memoh server. It packages the same Web UI into an Electron shell with native windows, tray, menus, and keyboard integration, and it can register the computer it runs on as a **Computer** that your bots can use.
+Memoh Desktop is the native client for Memoh Cloud or a self-hosted Memoh server. It packages the same client interface into an Electron shell with native windows, tray, menus, and keyboard integration, and it can register the computer it runs on as a **Computer** that your bots can use.
 
 Desktop does **not** run its own local server or database. You always connect it to a Memoh server: either [Memoh Cloud](https://memoh.ai) or your own [Server Deploy](./docker.md).
 
@@ -12,7 +12,7 @@ Choose Desktop when you want:
 - native menus and keyboard shortcuts for the daily Memoh workflow
 - to let server-side bots use this computer's files, shell, and browser without running a separate runtime process
 
-Use the Web UI directly if you only need occasional access from a browser.
+Use the web client directly if you only need occasional access from a browser.
 
 ## Install
 
@@ -40,7 +40,7 @@ See [Computers](../guides/computers.md) for the permission model, per-bot setup,
 ## What Desktop manages
 
 - the application window, tray icon, reopen and quit behavior
-- native menus wired to the same command registry as the Web UI
+- native menus wired to the same command registry as the web client
 - the connection to the selected server and its cached sign-in state
 - the optional Remote Runtime connection for **This computer**
 

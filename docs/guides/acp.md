@@ -84,7 +84,7 @@ In the bot's interaction settings you can pick a **Default Agent** — Memoh its
 
 ## ACP Agent Sessions
 
-ACP work uses the `acp_agent` session type. These sessions are created and managed by the Agents/ACP workflow, not through normal `/new chat` or `/new discuss` routing. In the Web UI, you can filter sessions by `acp_agent` to find coding-agent work separately from everyday conversations.
+ACP work uses the `acp_agent` session type. These sessions are created and managed by the Agents/ACP workflow, not through normal `/new chat` or `/new discuss` routing. In the app, you can filter sessions by `acp_agent` to find coding-agent work separately from everyday conversations.
 
 ---
 

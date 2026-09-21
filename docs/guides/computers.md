@@ -1,6 +1,6 @@
 # Computers (Remote Runtimes)
 
-Memoh can connect your own computers to a deployment so bots can work on them: read and write files, and run commands. The Web UI calls these **Computers**; a bot picks between them as **Work locations**.
+Memoh can connect your own computers to a deployment so bots can work on them: read and write files, and run commands. The app calls these **Computers**; a bot picks between them as **Work locations**.
 
 The agent itself does not move. Model calls, chat, sessions, and memory all stay on the Memoh server — a connected computer only provides its filesystem and command execution, and appears to the agent as another workspace.
 
@@ -16,7 +16,7 @@ A connected computer exposes the files of the OS user who runs the runtime and e
 
 ### With The Command Line
 
-1. Open the **Computers** page in the Web UI settings.
+1. Open the **Computers** page in the app settings.
 2. Create a runtime key. Keys look like `mrk_...`; any signed-in user can create keys, and each computer belongs to the user who created its key.
 3. Run the generated command on the computer you want to connect (Node.js 20+):
 

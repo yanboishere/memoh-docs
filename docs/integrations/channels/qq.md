@@ -12,7 +12,7 @@ Connecting your Memoh Bot to QQ allows it to interact with users through QQ's of
 
 ## Step 2: Configure Memoh
 
-1. Go to your Bot's **Platforms** tab in the Memoh Web UI.
+1. Go to your Bot's **Platforms** tab in the Memoh app.
 2. Click **Add Channel** and select **QQ**.
 3. Paste your **AppID** and **AppSecret**.
 4. Configure optional settings:

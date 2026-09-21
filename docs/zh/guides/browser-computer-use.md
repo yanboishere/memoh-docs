@@ -1,6 +1,6 @@
 # Browser Use 与 Computer Use
 
-Memoh 可以在机器人 workspace 容器里启动一个可见桌面和有头浏览器。这和跑 headless Playwright 脚本不是一条路径：机器人操作的是网页端 Display pane 里也能看到的那套图形浏览器。
+Memoh 可以在机器人 workspace 容器里启动一个可见桌面和有头浏览器。这和跑 headless Playwright 脚本不是一条路径：机器人操作的是客户端 **桌面** 面板里也能看到的那套图形浏览器。
 
 ## 概念区别
 
@@ -14,7 +14,7 @@ Memoh 可以在机器人 workspace 容器里启动一个可见桌面和有头浏
 
 ## Workspace display 与 VNC
 
-Workspace display 是机器人 workspace 容器里的桌面环境。VNC/RFB 是这套桌面的显示和输入传输基础；网页端的 Display 会话使用 WebRTC 承载画面。
+Workspace display 是机器人 workspace 容器里的桌面环境。VNC/RFB 是这套桌面的显示和输入传输基础；客户端的桌面会话使用 WebRTC 承载画面。
 
 重点不是“有 VNC”本身，而是 workspace 能跑有头 Chrome/Chromium。很多登录、验证码、复杂前端状态或只支持真实图形会话的网站，headless 模式不一定可靠。
 
@@ -43,7 +43,7 @@ workspace desktop 启用后，agent 可以使用浏览器和电脑操作工具�
 
 ### 无障碍辅助二进制
 
-Computer Use 依赖容器内 `/opt/memoh/toolkit/display/bin/a11y-cli` 以及 workspace 的 `at-spi2-core` 包。Display runtime probe 会返回 `a11y_available`，便于 Web UI 显示无障碍路径是否健康。AT-SPI 不可用时，`computer_action` 仍可用坐标驱动，`computer_observe screenshot` 仍然可用。
+Computer Use 依赖容器内 `/opt/memoh/toolkit/display/bin/a11y-cli` 以及 workspace 的 `at-spi2-core` 包。Display runtime probe 会返回 `a11y_available`，便于客户端显示无障碍路径是否健康。AT-SPI 不可用时，`computer_action` 仍可用坐标驱动，`computer_observe screenshot` 仍然可用。
 
 这些是 workspace runtime 能力，不是用来自动化 Electron 桌面 App 本身的。
 

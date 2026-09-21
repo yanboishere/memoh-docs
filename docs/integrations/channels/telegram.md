@@ -17,7 +17,7 @@ You need to create a bot on Telegram to get an API token.
 
 ## Step 2: Configure Memoh
 
-1. Go to your Bot's **Detail Page** in the Memoh Web UI.
+1. Go to your Bot's **Detail Page** in the Memoh app.
 2. Select the **Platforms** tab.
 3. Click **Add Channel** and select **Telegram**.
 4. Paste your **API Token** into the credentials field.

@@ -4,28 +4,26 @@ Memoh gives you bots that can actually do things. Every bot has its own workspac
 
 This tutorial takes you from an empty account to a bot that completes real work. It takes about fifteen minutes.
 
-::: tip Looking for installation?
-This page assumes you can already open a Memoh instance. If you need to deploy one yourself, read [Quick Start](./quick-start.md) first.
+::: tip Haven't installed Memoh yet?
+This page assumes the Memoh app is installed and signed in. If not, start with [Quick Start](./quick-start.md) — it takes a few minutes.
 :::
 
 ## Before You Begin
 
 You need:
 
-- Access to a Memoh instance and an account that can create bots.
-- An API key for at least one model provider (OpenAI, Anthropic, Gemini, DeepSeek, Zhipu, OpenRouter, Ollama, and others). Skip this if an administrator has already configured providers.
+- The Memoh app, signed in with an account that can create bots.
+- Nothing else on Memoh Cloud — hosted models are built in. To use your own models, have an API key ready for at least one provider (OpenAI, Anthropic, Gemini, DeepSeek, Zhipu, OpenRouter, Ollama, and others).
 
-## 1. Sign In
-
-Open the Memoh Web UI and sign in.
-
-If this is a fresh instance, change the initial password immediately under **Settings → Account**.
+## 1. Check Your Preferences
 
 Interface language, theme, and similar options can be adjusted at any time in [Preferences](./preferences.md). They do not affect the steps below.
 
-## 2. Add A Model Provider
+## 2. Add A Model Provider (Optional)
 
-A bot cannot think without a model. Skip this step if your administrator has already configured one.
+A bot cannot think without a model. On Memoh Cloud, hosted models are ready to use — skip this step. Skip it too if an administrator has already configured providers for your team.
+
+To bring your own models:
 
 1. Open **Providers** in the sidebar and click **Add Provider**.
 2. Pick a template, paste your API key, and save.
@@ -80,7 +78,7 @@ Remove every row with an empty email column from the CSV I just uploaded.
 Give me the cleaned file and tell me how many rows you dropped.
 ```
 
-When a task needs a real browser — a site that breaks in headless mode, or a page behind a login — enable the visible desktop on the bot's **Desktop** tab. Once started, the bot drives a headed Chrome and you can watch it work in the display panel.
+When a task needs a real browser — a site that breaks in headless mode, or a page behind a login — enable the visible desktop on the bot's **Desktop** tab. Once started, the bot drives a headed Chrome and you can watch it work in the desktop panel.
 
 When it hits a login wall, take over the screen yourself: type the password, passkey, or one-time code, then hand control back. The browser session stays in that workspace, so later tasks remain signed in.
 
@@ -90,12 +88,12 @@ Workspace access is tiered: chat only, read files, write files, execute commands
 
 For details, see [Workspace](./container.md) and [Browser / Computer Use](./browser-computer-use.md).
 
-## 6. Connect A Chat Channel
+## 6. Connect A Chat Platform
 
 A bot is most useful where you already talk.
 
 1. Open the bot's **Platforms** tab and click **Add**.
-2. Choose a platform — Telegram, Slack, Discord, Feishu, DingTalk, WeCom, QQ, LINE, Matrix, or Misskey — and paste that platform's credentials.
+2. Choose a platform — Telegram, Slack, Discord, Feishu, DingTalk, WeCom, WeChat, WeChat Official Account, QQ, LINE, Matrix, or Misskey — and paste that platform's credentials.
 3. Message it from that platform. The first message creates a session; send `/help` to see the available [slash commands](./slash-commands.md).
 
 From then on you can hand off a task from your phone and collect the result in the same conversation. For per-platform setup, see [Channels](../integrations/channels/index.md).
@@ -123,6 +121,6 @@ Once a routine is stable, stop retyping it:
 | Understand chat, discuss, and routing | [Sessions](./sessions.md) |
 | Connect external tools and data | [MCP](./mcp.md), [Connectors](./connectors.md) |
 | Install prebuilt capabilities | [Supermarket](./supermarket.md) |
-| Attach your own machine as a work location | [Computers](./computers.md) |
+| Let bots work on this computer | [Computers](./computers.md) |
 | Hook into lifecycle events | [Hooks](./hooks.md) |
 | Control who can talk to a bot | [Access Control](./access.md) |

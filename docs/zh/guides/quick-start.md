@@ -1,91 +1,62 @@
 # 快速开始
 
-大约十分钟即可跑通 Memoh:部署服务端、登录、添加模型服务商、创建第一个机器人,并把它接到一个聊天平台。
-
-::: tip 不想自托管?
-[Memoh Cloud](https://memoh.ai) 提供与开源版一致的托管服务。登录后可直接跳到 [第 3 步](#第-3-步添加模型服务商)。
-:::
+大约十分钟,从零到一个能用的机器人:安装应用、登录、创建第一个机器人,并在聊天平台上找到它。
 
 ## 前置条件
 
-- 一台安装了 **Docker** 与 **Docker Compose** 的 Linux 服务器或工作站。
-- 至少一个模型服务商的 API Key(OpenAI、Anthropic、DeepSeek、智谱……),或本地 Ollama。
-- 浏览器可以访问服务器的 **8080**(API)与 **8082**(Web UI)端口。
+- 一台 macOS、Windows 或 Linux 电脑。
+- 一个 [Memoh Cloud](https://app.memoh.net) 账号——登录时可以直接注册。
 
-## 第 1 步:部署服务端
+就这些。Memoh Cloud 内置了托管模型(DeepSeek、Kimi、GPT、Claude 等),上手不需要任何 API Key。
 
-一行安装脚本会拉取镜像、生成 `config.toml`,并用 Docker Compose 启动全部组件:
+## 第 1 步:安装 Memoh
 
-```bash
-curl -fsSL https://memoh.sh | sh
-```
-
-中国大陆用户可启用镜像加速:
-
-```bash
-curl -fsSL https://memoh.sh | USE_CN_MIRROR=true sh
-```
-
-::: warning 不要用 `sudo` 运行整个安装脚本
-当前用户不在 `docker` 组时,脚本会自行调用 `sudo docker`。
-:::
-
-想手动部署?克隆仓库后执行:
-
-```bash
-git clone https://github.com/felinics/Memoh.git
-cd Memoh
-cp conf/app.docker.toml config.toml
-# 编辑 config.toml(管理员密码、JWT 密钥等)
-docker compose up -d
-```
-
-完成后会看到类似输出:
-
-```text
-🌐 Web UI:      http://localhost:8082
-🔌 API:         http://localhost:8080
-🔑 Admin login: admin / <你的密码>
-```
-
-生产环境加固、反向代理与升级方式见 [服务端部署](../self-hosted/docker.md)。
+从 [下载页](https://memoh.ai/desktop) 下载对应平台的安装包——macOS(DMG)、Windows(安装程序)或 Linux(AppImage/deb/rpm)——然后打开它。
 
 ## 第 2 步:登录
 
-打开 `http://<你的服务器>:8082`,使用安装时设置的管理员账号登录(`conf/app.docker.toml` 中的默认值为 `admin` / `admin123`)。登录后请立即在 **设置 → 账户** 中修改密码。
+在连接页选择 **Memoh Cloud** 并登录,没有账号就先注册一个。
 
-## 第 3 步:添加模型服务商
+::: tip 加入团队?
+如果你的团队已经在用 Memoh,改为填入管理员给你的地址,再用团队分配的账号登录即可。
+:::
 
-1. 在侧边栏进入 **模型服务商**,点击 **添加模型服务商**。
-2. 选择模板(OpenAI、Anthropic、Gemini、DeepSeek、智谱、OpenRouter、Ollama……)并填入 API Key。
-3. 进入该模型服务商,**同步** 或手动添加至少一个对话模型。
-
-更多细节与客户端类型见 [模型服务商](../integrations/providers/llm.md)。
-
-## 第 4 步:创建第一个机器人
+## 第 3 步:创建第一个机器人
 
 1. 进入 **机器人 → 新建机器人**,填写名称与显示名。
-2. 在机器人的 **通用** 标签页中选择刚添加的对话模型。
+2. 在机器人的 **通用** 标签页选择对话模型。托管模型开箱即用;想用自己的 API Key,见 [模型服务商](../integrations/providers/llm.md)。
 3. 点击机器人的 **聊天** 按钮打个招呼。收到回复即说明链路已打通。
 
 每个机器人都有独立的工作区、记忆与设置,各标签页说明见 [机器人](./bot.md)。
 
-## 第 5 步:接入聊天平台
+## 第 4 步:交给它一个真实任务
 
-1. 打开机器人的 **渠道** 标签页,点击 **添加**。
-2. 选择平台(Telegram、Discord、Slack、飞书、钉钉、企业微信、QQ、LINE、Matrix、Misskey……)并填写平台凭据。
+机器人不只是一个聊天窗口——它有自己的工作区,带真实的文件系统和终端。在聊天里上传任意一份文档,试试:
+
+```text
+把这份文档总结成五个要点,并把摘要保存为工作区里的 summary.md。
+不要修改原文件。
+```
+
+机器人会读取文件、把结果写进工作区,然后向你汇报。它产出的内容可以在 **文件** 里查看。
+
+## 第 5 步:在聊天平台上找到它
+
+1. 打开机器人的 **平台** 标签页,点击 **添加**。
+2. 选择平台——Telegram、Slack、Discord、飞书、钉钉、企业微信、微信、QQ、LINE 等——并填写该平台的凭据。
 3. 在该平台上给机器人发消息。第一条消息会创建会话;输入 `/help` 查看可用的斜杠命令。
 
-各平台的详细配置见 [渠道](../integrations/channels/index.md)。
+从此你可以在手机上派活,然后在同一个对话里收结果。各平台的详细配置见 [渠道](../integrations/channels/index.md)。
 
 ## 下一步
 
 | 目标 | 阅读 |
 |------|------|
+| 完整教程:指令、任务、工作区与浏览器 | [入门教程](./get-started.md) |
 | 让机器人跨会话记住用户 | [记忆](./memory.md) |
 | 运行定时或周期任务 | [定时任务](./schedule.md) |
-| 赋予机器人文件、Shell 与浏览器能力 | [Workspace](./container.md)、[电脑](./computers.md) |
+| 赋予机器人文件、Shell 与浏览器能力 | [工作区](./container.md) |
+| 让机器人在这台电脑上干活 | [电脑](./computers.md) |
 | 通过 MCP 服务器添加工具 | [MCP](./mcp.md) |
-| 教会机器人可复用的流程 | [Skills](./skills.md)、[应用市场](./supermarket.md) |
+| 教会机器人可复用的流程 | [技能](./skills.md)、[应用市场](./supermarket.md) |
 | 控制谁可以和机器人对话 | [访问控制](./access.md) |
-| 在 Mac 上用桌面版运行 | [Desktop](../self-hosted/desktop.md) |
