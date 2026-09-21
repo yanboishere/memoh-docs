@@ -21,17 +21,23 @@
 
 需时点 **申请权限**。
 
-## 4. 事件：Webhook 入站
+## 4. 在 Memoh 里接入（默认：长连接）
 
-1. Memoh 里该机器人 **Platforms** → 加 **飞书**，**入站方式** 选 `webhook`。
-2. 填 **App ID**、**App Secret**。
-3. **Save**，页面上会出现 **Webhook 回调 URL**，复制。
-4. 飞书后台 **应用配置** → **事件订阅**。
-5. 把上面 URL 填到 **请求地址** 等对应栏位并保存。
-6. 订阅如 **接收消息**（`im.message.receive_v1` 等，以当前控制台为准）。
+1. Memoh 里该机器人 **平台** → 加 **飞书**，**入站方式** 保持默认的 `websocket`。
+2. 填 **App ID**、**App Secret**；使用国际版 Lark 时把 **区域** 切到 `lark`。
+3. **Save**。消息经飞书 **WebSocket 长连接** 送达，无需公网回调地址，也不用配置事件订阅。
+
+## 5. 备选：Webhook 入站
+
+服务端可被公网访问、且你更希望走事件回调时再选这种方式：
+
+1. **入站方式** 改选 `webhook`；除 **App ID**、**App Secret** 外，再填入与飞书后台事件订阅一致的 **Encrypt Key** 与 **Verification Token**。
+2. **Save**，页面上会出现 **Webhook 回调 URL**，复制。
+3. 飞书后台 **应用配置** → **事件订阅**，把上面 URL 填到 **请求地址** 并保存。
+4. 订阅如 **接收消息**（`im.message.receive_v1` 等，以当前控制台为准）。
 
 > 官方： [飞书自定义机器人](https://open.feishu.cn/document/client-docs/bot-v3/add-custom-bot)
 
-## 5. 发布
+## 6. 发布
 
 **应用发布** → **版本管理与发布**，建版本、走审批/发布。通过后机器人才能在租户里正常用。
