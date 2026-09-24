@@ -254,7 +254,7 @@ Hooks tab 会从 `/bots/{bot_id}/hooks/events` 加载事件目录。标记为 ru
 
 ## 安全注意事项
 
-Hooks 很强大。请把它们当成会在 Bot workspace 里运行的代码来对待。
+Hooks 会在 Bot workspace 里实际执行。请把它们当成跑在那里的代码来对待。
 
 - 启用前审查每个 command action。
 - 小心使用 `PreToolUse`、`BeforeWorkspaceCommand` 和 `BeforeFileWrite`；它们可能阻断 Bot 的正常工作。

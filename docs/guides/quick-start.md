@@ -67,7 +67,7 @@ The bot reads the file inside its own workspace and writes the result back to th
 
 ## Step 5: Let it use the workspace and browser
 
-The workspace is where a bot stops being a chatbot. It has a Linux filesystem, a terminal, and a preinstalled toolchain (Python, Node.js, uv, npm), so it can actually run the work:
+The workspace is where a bot does its work. It has a Linux filesystem, a terminal, and a preinstalled toolchain (Python, Node.js, uv, npm), so it can run data cleanups, scripts, and builds directly:
 
 ```text
 Remove every row with an empty email column from the CSV I just uploaded.

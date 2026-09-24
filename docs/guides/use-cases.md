@@ -14,7 +14,7 @@ A good bot **owns a repeatable outcome**, not a loose category of questions. Eac
 
 > Every weekday at 8am, summarize releases and notable issues from the repositories I follow over the last 24 hours, add today's weather, and send it to me as one digest. Cite a source for every item; if something is uncertain, say so instead of guessing.
 
-The bot has a `schedule` tool — describe the timing in plain language and it registers the cron entry itself. Cap the first runs with **Max Calls** until the format looks right.
+The bot has a `schedule` tool: describe the timing in plain language and it registers the cron entry itself. Cap the first runs with **Max Calls** until the format looks right.
 
 ## Release Watch
 
@@ -30,7 +30,7 @@ The bot has a `schedule` tool — describe the timing in plain language and it r
 
 ## Group On-Call Assistant
 
-**Owns:** secretary duty in a team group — answers when mentioned, posts a daily recap.
+**Owns:** secretary duty in a team group: answers when mentioned and posts a daily recap.
 
 **Uses:** [Platforms](../integrations/channels/index.md) · [Sessions](./sessions.md) · [Access Control](./access.md) · [Scheduled Tasks](./schedule.md)
 
@@ -42,7 +42,7 @@ Use the "group only" [Access Control](./access.md) preset to fence its territory
 
 ## A Living Spreadsheet
 
-**Owns:** one data file — created, updated on schedule, with changes reported first.
+**Owns:** one data file that the bot creates, updates on schedule, and reports changes to first.
 
 **Uses:** [Workspace](./container.md) · [Files](./files.md) · [Scheduled Tasks](./schedule.md)
 
@@ -54,7 +54,7 @@ The workspace is a real filesystem with a terminal (Python, Node.js, and uv prei
 
 ## Screen Work Behind Logins
 
-**Owns:** web tasks that need eyes on a screen — console checks, form flows, OAuth.
+**Owns:** web tasks that need eyes on a screen: console checks, form flows, OAuth.
 
 **Uses:** [Browser / Computer Use](./browser-computer-use.md) · [Workspace](./container.md) (visible desktop)
 
@@ -74,7 +74,7 @@ The visible desktop works both ways: watch it work in the desktop pane, or take 
 
 > Build a reading-list web page in your workspace: add items, mark them finished, filter by theme. When it works, start the dev server and tell me how to preview it. Commit every change locally with git — do not push to any remote.
 
-Prefer Claude Code or Codex? Attach your own subscription on the bot's **Agent** tab — same workspace, same files, your familiar coding agent doing the work.
+Prefer Claude Code or Codex? Attach your own subscription on the bot's **Agent** tab; it keeps working in the same workspace, on the same files.
 
 ## An Assistant That Remembers
 

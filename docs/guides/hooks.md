@@ -254,7 +254,7 @@ The test path uses the effective config and runs real actions. Avoid destructive
 
 ## Safety Notes
 
-Hooks are powerful. Treat them like code that runs inside the bot workspace.
+Hooks execute inside the bot workspace. Treat them like any other code that runs there.
 
 - Review every command action before enabling it.
 - Be careful with `PreToolUse`, `BeforeWorkspaceCommand`, and `BeforeFileWrite`; they can block normal bot work.
