@@ -8,6 +8,7 @@ const references = [
   {
     text: '快速开始',
     items: [
+      { text: '概览', link: '/zh/guides/overview.md' },
       { text: '快速开始', link: '/zh/guides/quick-start.md' },
       { text: '用户偏好', link: '/zh/guides/preferences.md' },
       { text: 'Bot', link: '/zh/guides/bot.md' },

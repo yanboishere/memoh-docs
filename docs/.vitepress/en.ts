@@ -8,6 +8,7 @@ const references = [
   {
     text: 'Getting Started',
     items: [
+      { text: 'Overview', link: '/guides/overview.md' },
       { text: 'Quick Start', link: '/guides/quick-start.md' },
       { text: 'Preferences', link: '/guides/preferences.md' },
       { text: 'Bot', link: '/guides/bot.md' },

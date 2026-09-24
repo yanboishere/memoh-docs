@@ -6,6 +6,7 @@ Welcome to the Memoh references. Everything you need to set up and use Memoh liv
 
 Start here if you are new to Memoh. Learn how to install the app, create your first bot, connect a channel, and handle day-to-day basics.
 
+- **[Overview](./overview.md)**: What Memoh is and how the pieces fit together.
 - **[Quick Start](./quick-start.md)**: Install the app, sign in, create your first bot, give it real work, and connect a chat platform.
 - **[Preferences](./preferences.md)**: Customize language, theme, typography, diagrams, and keyboard shortcuts.
 - **[Bot](./bot.md)**: Create a bot and configure its core tabs.
