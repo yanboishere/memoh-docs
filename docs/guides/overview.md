@@ -2,7 +2,7 @@
 
 Memoh gives every bot its own cloud computer: a workspace with a real filesystem and terminal, a desktop browser you can watch and take over, and long-term memory that carries across sessions. Close your laptop; the bot keeps working.
 
-You work with a bot by messaging it — in the Memoh app, or on Telegram, Slack, Discord, Feishu, DingTalk, WeCom, WeChat, QQ, and LINE. Same bot, same memory, whichever door you knock on.
+You work with a bot by messaging it — in the Memoh app, or on Telegram, Slack, Discord, Feishu, DingTalk, WeCom, WeChat, QQ, and LINE. Every entry point reaches the same bot and the same memory.
 
 Getting in takes a download and a Memoh Cloud sign-in. Hosted models (DeepSeek, Kimi, GPT, Claude, and more) are ready to use; to run your own keys or model service, see [BYOK](./quick-start.md#bring-your-own-key-byok).
 

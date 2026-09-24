@@ -2,7 +2,7 @@
 
 Memoh 给每个 Bot 一台自己的云电脑：带真实文件系统和终端的工作区、可以看见和接管的桌面浏览器，以及跨会话的长期记忆。你的笔记本合上之后，它照常工作。
 
-和 Bot 协作的方式就是给它发消息。在 Memoh 应用里聊，或者把它接到 Telegram、Slack、Discord、飞书、钉钉、企业微信、微信、QQ、LINE——同一个 Bot、同一份记忆，在哪个入口说话都接得上。
+和 Bot 协作的方式就是给它发消息。在 Memoh 应用里聊，或者把它接到 Telegram、Slack、Discord、飞书、钉钉、企业微信、微信、QQ、LINE。无论从哪个入口进来，都是同一个 Bot 和同一份记忆。
 
 上手只需要下载应用并登录 Memoh Cloud。托管模型（DeepSeek、Kimi、GPT、Claude 等）开箱即用；想换自己的 API Key 或模型服务，见 [BYOK](./quick-start.md#使用自己的模型-byok)。
 

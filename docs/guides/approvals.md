@@ -6,7 +6,7 @@ A bot that can write files, run commands, and message people needs a boundary yo
 
 - **Its own workspace, and nothing else.** Each bot works inside its own isolated container workspace (`/data`). Files and state stay there, and bots cannot see into each other — see [Workspace](./container.md).
 - **Only the channels and people you connected.** A bot reaches a platform because you added it on the **Platforms** tab, and answers an identity because access allows it.
-- **Only the tier each person was granted.** Workspace access is tiered — chat, read files, write files, execute commands, manage — and a job gets the level it needs, no more. The tiers are defined in [Access Control](./access.md).
+- **Only the tier each person was granted.** Workspace access is tiered (chat, read files, write files, execute commands, manage), and a job gets the level it needs, no more. The tiers are defined in [Access Control](./access.md).
 
 Two member lists feed these grants, both on the bot's **Access** tab: **Channel Members** for identities on IM platforms, and **Workspace Members** for registered Memoh users.
 
@@ -26,14 +26,14 @@ Beyond the Tool Approval settings, a [hook](./hooks.md) matched on an event can 
 
 ## Keep these behind approval
 
-These are recommendations, not defaults Memoh enforces — a starting point that has aged well:
+These are recommendations, not defaults Memoh enforces; treat them as a sensible starting point:
 
 - **Messages that leave the workspace** — anything sent to other people or posted publicly.
 - **Deleting or overwriting files**, especially ones the bot did not create.
 - **Installs and long-running commands** in the workspace.
 - **Anything that spends money or touches production.**
 
-Actions that stay inside the bot's own workspace — drafting, organizing, reading — are the ones worth freeing from approval first. For how this fits the lifecycle of a routine, from first read-only run to widened permissions, see [Working with Bots](./working-with-bots.md).
+Actions that stay inside the bot's own workspace (drafting, organizing, reading) are the ones worth freeing from approval first. For how this fits a routine's lifecycle, from the first read-only run to widened permissions, see [Working with Bots](./working-with-bots.md).
 
 ## Takeover and credentials
 
@@ -47,4 +47,4 @@ The browser session stays in that workspace afterwards, so later tasks remain si
 An approval gates the proposed action — it does not undo work that already ran, and it cannot retract a message that was already sent. Rejecting a request stops that request; it is not a rollback button.
 :::
 
-That is why the durable habit is the one from [Access Control](./access.md): grant the minimum tier the job needs, review a few runs, and widen afterwards. Trust in a bot is built the same way as trust in a new teammate — incrementally, on evidence.
+That is why the durable habit is the one from [Access Control](./access.md): grant the minimum tier the job needs, review a few runs, and widen afterwards. Trust in a bot is built the same way as trust in a new teammate: incrementally, on evidence.
