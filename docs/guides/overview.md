@@ -52,6 +52,6 @@ The [Help Center](https://memoh.ai/help): plans, credits, account questions, and
 
 - [Quick Start](./quick-start.md) — from installing the app to a connected chat platform, in about fifteen minutes.
 - [Use Cases](./use-cases.md) — ready-to-follow scenarios that combine features to solve real problems.
-- [Bot](./bot.md) — configure a bot tab by tab.
+- [Bot](./working-with-bots.md) — configure a bot tab by tab.
 - [Channels](../integrations/channels/index.md) — per-platform setup guides.
 - [Help Center](https://memoh.ai/help) — plans, billing, and account questions.

@@ -36,7 +36,7 @@ Hooks 可以围绕支持的事件运行小型自动化规则，Schedule 则让�
 
 ## 从哪开始
 
-- **[Bot](./guides/bot.md)** - 创建并配置 Bot。
+- **[Bot](./guides/working-with-bots.md)** - 创建并配置 Bot。
 - **[模型服务商与模型](./integrations/providers/llm.md)** - 配置模型访问。
 - **[渠道](./integrations/channels/index.md)** - 选择 Bot 出现的位置。
 - **[技能](./guides/skills.md)** 和 **[应用市场](./guides/supermarket.md)** - 安装可复用能力。

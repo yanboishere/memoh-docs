@@ -36,7 +36,7 @@ Access control is split between channel-side chat permissions and workspace-side
 
 ## Where To Start
 
-- **[Bot Setup](./guides/bot.md)** - create and configure a bot.
+- **[Bot Setup](./guides/working-with-bots.md)** - create and configure a bot.
 - **[Providers And Models](./integrations/providers/llm.md)** - configure model access.
 - **[Channels](./integrations/channels/index.md)** - choose where bots are reachable.
 - **[Skills](./guides/skills.md)** and **[Supermarket](./guides/supermarket.md)** - install reusable capabilities.

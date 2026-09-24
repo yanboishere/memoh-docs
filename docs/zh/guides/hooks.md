@@ -267,5 +267,5 @@ Hooks 会在 Bot workspace 里实际执行。请把它们当成跑在那里的�
 
 ## 相关页面
 
-- [Bot](./bot.md)
+- [Bot](./working-with-bots.md)
 - [技能](./skills.md)

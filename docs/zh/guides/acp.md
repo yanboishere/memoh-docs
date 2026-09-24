@@ -76,7 +76,7 @@ ACP 工作使用 `acp_agent` 会话类型，由 Agents/ACP 工作流创建和管
 
 ## 相关页面
 
-- [Bot](./bot.md)
+- [Bot](./working-with-bots.md)
 - [会话](./sessions.md)
 - [文件](./files.md)
 - [模型服务商与模型](../integrations/providers/llm.md)

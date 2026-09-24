@@ -3,7 +3,6 @@ const references = [
     text: '参考文档',
     items: [
       { text: '总览', link: '/zh/guides/' },
-      { text: '产品动态', link: '/zh/guides/changelog.md' },
     ],
   },
   {
@@ -13,7 +12,6 @@ const references = [
       { text: '快速开始', link: '/zh/guides/quick-start.md' },
       { text: '和 Bot 协作', link: '/zh/guides/working-with-bots.md' },
       { text: '用户偏好', link: '/zh/guides/preferences.md' },
-      { text: 'Bot', link: '/zh/guides/bot.md' },
       { text: '会话', link: '/zh/guides/sessions.md' },
       { text: '文件', link: '/zh/guides/files.md' },
       { text: '斜杠命令', link: '/zh/guides/slash-commands.md' },
@@ -53,46 +51,19 @@ const references = [
       { text: '长期记忆', link: '/zh/guides/memory.md' },
       { text: '上下文压缩', link: '/zh/guides/compaction.md' },
       { text: '定时任务', link: '/zh/guides/schedule.md' },
-      {
-        text: '提供方',
-        collapsed: true,
-        items: [
-          { text: '模型服务商', link: '/zh/integrations/providers/llm.md' },
-          { text: '搜索提供方', link: '/zh/integrations/providers/web-search.md' },
-          { text: '视频提供方', link: '/zh/integrations/providers/video.md' },
-          {
-            text: '记忆提供方',
-            collapsed: true,
-            items: [
-              { text: '内置', link: '/zh/integrations/providers/memory/builtin.md' },
-              { text: 'Mem0', link: '/zh/integrations/providers/memory/mem0.md' },
-              { text: 'OpenViking', link: '/zh/integrations/providers/memory/openviking.md' },
-              { text: '总览', link: '/zh/integrations/providers/memory/' },
-            ],
-          },
-          {
-            text: 'TTS 提供方',
-            collapsed: true,
-            items: [
-              { text: 'Edge TTS', link: '/zh/integrations/providers/tts/edge.md' },
-              { text: '总览', link: '/zh/integrations/providers/tts/' },
-            ],
-          },
-          { text: '总览', link: '/zh/integrations/providers/' },
-        ],
-      },
+      { text: '模型服务商', link: '/zh/integrations/providers/llm.md' },
+      { text: '搜索提供方', link: '/zh/integrations/providers/web-search.md' },
+      { text: '视频提供方', link: '/zh/integrations/providers/video.md' },
+      { text: '记忆提供方：内置', link: '/zh/integrations/providers/memory/builtin.md' },
+      { text: '记忆提供方：Mem0', link: '/zh/integrations/providers/memory/mem0.md' },
+      { text: '记忆提供方：OpenViking', link: '/zh/integrations/providers/memory/openviking.md' },
+      { text: 'TTS：Edge', link: '/zh/integrations/providers/tts/edge.md' },
     ],
   },
   {
     text: '使用场景',
     items: [
       { text: '使用场景', link: '/zh/guides/use-cases.md' },
-    ],
-  },
-  {
-    text: '帮助',
-    items: [
-      { text: '故障排查', link: '/zh/guides/troubleshooting.md' },
     ],
   },
 ]

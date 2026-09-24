@@ -267,5 +267,5 @@ Hooks execute inside the bot workspace. Treat them like any other code that runs
 
 ## Related Pages
 
-- [Bot Management](./bot.md)
+- [Bot Management](./working-with-bots.md)
 - [Skills](./skills.md)

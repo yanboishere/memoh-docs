@@ -52,6 +52,6 @@ Bot 会自己登记定时任务并按周交付。先从只读的活儿开始，�
 
 - [快速开始](./quick-start.md)——从装应用到接入聊天平台，十五分钟。
 - [使用场景](./use-cases.md)——组合多种功能解决实际问题的即用示例。
-- [Bot](./bot.md)——逐个标签页配置一个 Bot。
+- [Bot](./working-with-bots.md)——逐个标签页配置一个 Bot。
 - [渠道](../integrations/channels/index.md)——各聊天平台的接入方法。
 - [帮助中心](https://memoh.ai/help)——订阅、账单与账号问题。

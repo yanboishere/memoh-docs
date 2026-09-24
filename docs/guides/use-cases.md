@@ -86,7 +86,7 @@ Prefer Claude Code or Codex? Attach your own subscription on the bot's **Agent**
 
 > Remember these preferences: mornings are for deep work, meetings go in the afternoon, and the weekly report is due Friday before end of day. From now on, check memory before scheduling reminders or writing summaries; if a preference is unclear, ask me instead of guessing.
 
-With a [memory provider](../integrations/providers/memory/index.md) configured, "whatever happened with that PR?" is a question it can just answer. When memories pile up, run **Compact** to merge and dedupe.
+With a [memory provider](../integrations/providers/memory/builtin.md) configured, "whatever happened with that PR?" is a question it can just answer. When memories pile up, run **Compact** to merge and dedupe.
 
 ---
 

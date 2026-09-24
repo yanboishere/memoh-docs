@@ -29,7 +29,7 @@ Now write its instructions. This step matters most, and it is where people most 
 >
 > **Instructions:** Collect the articles I send you during the week. Every Friday, produce a digest grouped by theme: one sentence per article with its original link, followed by a "worth re-reading" section. Keep original links unchanged. Never publish anything publicly.
 
-A bot with one focused job accumulates far more useful context than a bot that does everything. When work genuinely splits into separate roles, create another bot instead of overloading this one — each bot has its own workspace, memory, and configuration. For a walkthrough of every tab, see [Bot](./bot.md).
+A bot with one focused job accumulates far more useful context than a bot that does everything. When work genuinely splits into separate roles, create another bot instead of overloading this one — each bot has its own workspace, memory, and configuration. For a walkthrough of every tab, see [Bot](./working-with-bots.md).
 
 Click **Chat** and say hello. A reply confirms the model path works.
 
@@ -113,7 +113,7 @@ Once a routine is stable, stop retyping it:
 
 | Goal | Read |
 |------|------|
-| Configure a bot tab by tab | [Bot](./bot.md) |
+| Configure a bot tab by tab | [Bot](./working-with-bots.md) |
 | Understand chat, discuss, and routing | [Sessions](./sessions.md) |
 | Run scheduled or recurring tasks | [Schedule](./schedule.md) |
 | Connect external tools and data | [MCP](./mcp.md), [Connectors](./connectors.md) |

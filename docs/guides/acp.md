@@ -76,7 +76,7 @@ ACP work uses the `acp_agent` session type. These sessions are created and manag
 
 ## Related Pages
 
-- [Bot Management](./bot.md)
+- [Bot Management](./working-with-bots.md)
 - [Sessions](./sessions.md)
 - [Files](./files.md)
 - [Providers And Models](../integrations/providers/llm.md)

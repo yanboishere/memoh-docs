@@ -3,7 +3,6 @@ const references = [
     text: 'References',
     items: [
       { text: 'Overview', link: '/guides/' },
-      { text: 'Changelog', link: '/guides/changelog.md' },
     ],
   },
   {
@@ -13,7 +12,6 @@ const references = [
       { text: 'Quick Start', link: '/guides/quick-start.md' },
       { text: 'Working with Bots', link: '/guides/working-with-bots.md' },
       { text: 'Preferences', link: '/guides/preferences.md' },
-      { text: 'Bot', link: '/guides/bot.md' },
       { text: 'Sessions', link: '/guides/sessions.md' },
       { text: 'Files', link: '/guides/files.md' },
       { text: 'Slash Commands', link: '/guides/slash-commands.md' },
@@ -53,46 +51,19 @@ const references = [
       { text: 'Memory', link: '/guides/memory.md' },
       { text: 'Compaction', link: '/guides/compaction.md' },
       { text: 'Scheduled Tasks', link: '/guides/schedule.md' },
-      {
-        text: 'Providers',
-        collapsed: true,
-        items: [
-          { text: 'LLM Providers', link: '/integrations/providers/llm.md' },
-          { text: 'Web Search Providers', link: '/integrations/providers/web-search.md' },
-          { text: 'Video Providers', link: '/integrations/providers/video.md' },
-          {
-            text: 'Memory Providers',
-            collapsed: true,
-            items: [
-              { text: 'Built-in', link: '/integrations/providers/memory/builtin.md' },
-              { text: 'Mem0', link: '/integrations/providers/memory/mem0.md' },
-              { text: 'OpenViking', link: '/integrations/providers/memory/openviking.md' },
-              { text: 'Overview', link: '/integrations/providers/memory/' },
-            ],
-          },
-          {
-            text: 'TTS Providers',
-            collapsed: true,
-            items: [
-              { text: 'Edge TTS', link: '/integrations/providers/tts/edge.md' },
-              { text: 'Overview', link: '/integrations/providers/tts/' },
-            ],
-          },
-          { text: 'Overview', link: '/integrations/providers/' },
-        ],
-      },
+      { text: 'LLM Providers', link: '/integrations/providers/llm.md' },
+      { text: 'Web Search Providers', link: '/integrations/providers/web-search.md' },
+      { text: 'Video Providers', link: '/integrations/providers/video.md' },
+      { text: 'Memory: Built-in', link: '/integrations/providers/memory/builtin.md' },
+      { text: 'Memory: Mem0', link: '/integrations/providers/memory/mem0.md' },
+      { text: 'Memory: OpenViking', link: '/integrations/providers/memory/openviking.md' },
+      { text: 'TTS: Edge', link: '/integrations/providers/tts/edge.md' },
     ],
   },
   {
     text: 'Use Cases',
     items: [
       { text: 'Use Cases', link: '/guides/use-cases.md' },
-    ],
-  },
-  {
-    text: 'Help',
-    items: [
-      { text: 'Troubleshooting', link: '/guides/troubleshooting.md' },
     ],
   },
 ]

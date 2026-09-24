@@ -4,7 +4,7 @@ Memoh 的结构化长期记忆让 Bot 在**多路会话**里也能用上以前�
 
 ## 先决条件
 
-1. 在 [记忆提供方](../integrations/providers/memory/index.md) 里建一个（内置、Mem0、OpenViking 等）。
+1. 在 [记忆提供方](../integrations/providers/memory/builtin.md) 里建一个（内置、Mem0、OpenViking 等）。
 2. 打开 Bot **General**。
 3. **Memory Provider** 里选中。
 4. 保存。
@@ -82,5 +82,5 @@ Memoh 的结构化长期记忆让 Bot 在**多路会话**里也能用上以前�
 ## 和 Bot 的关系
 
 - 聊的时候会按配置去搜记忆。
-- 具体用哪种后端、embedding 等，在**提供方**上配，见 [记忆提供方](../integrations/providers/memory/index.md)。
+- 具体用哪种后端、embedding 等，在**提供方**上配，见 [记忆提供方](../integrations/providers/memory/builtin.md)。
 - 长期记忆是 Bot「个性与事实」里很大一块来源。
