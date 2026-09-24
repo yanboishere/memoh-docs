@@ -60,3 +60,7 @@ From then on you can hand off a task from your phone and collect the result in t
 | Add tools via MCP servers | [MCP](./mcp.md) |
 | Teach the bot reusable procedures | [Skills](./skills.md), [Supermarket](./supermarket.md) |
 | Control who can talk to the bot | [Access Control](./access.md) |
+
+::: tip Need help?
+Questions about plans, credits, or your account — or anything this site doesn't cover — are answered in the [Help Center](https://memoh.ai/help), where you can also reach the Memoh team.
+:::

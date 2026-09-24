@@ -36,3 +36,7 @@ Deepen your usage once the basics are in place. These pages cover capabilities, 
 ## Use Cases
 
 - **[Use Cases](./use-cases.md)**: Ready-to-follow scenarios that combine features to solve real problems.
+
+## Getting Help
+
+These pages are the product reference. For plans, credits and billing, account questions, and a direct line to the Memoh team, visit the [Help Center](https://memoh.ai/help).

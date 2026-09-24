@@ -41,3 +41,4 @@ Hooks 可以围绕支持的事件运行小型自动化规则，Schedule 则让�
 - **[渠道](./integrations/channels/index.md)** - 选择机器人出现的位置。
 - **[技能](./guides/skills.md)** 和 **[应用市场](./guides/supermarket.md)** - 安装可复用能力。
 - **[定时任务](./guides/schedule.md)** 和 **[访问控制](./guides/access.md)** - 运维周期性工作和权限。
+- **[帮助中心](https://memoh.ai/help)** - 订阅、账单与账号类问题，以及联系团队的入口。

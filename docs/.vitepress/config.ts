@@ -21,6 +21,7 @@ export default defineConfig({
         nav: [
           { text: 'Guides', link: '/guides/' },
           { text: 'Integrations', link: '/integrations/' },
+          { text: 'Help Center', link: 'https://memoh.ai/help' },
         ],
       },
     },
@@ -31,6 +32,7 @@ export default defineConfig({
         nav: [
           { text: '教程', link: '/zh/guides/' },
           { text: '集成', link: '/zh/integrations/' },
+          { text: '帮助中心', link: 'https://memoh.ai/help' },
         ],
       },
     }

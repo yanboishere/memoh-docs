@@ -41,3 +41,4 @@ Access control is split between channel-side chat permissions and workspace-side
 - **[Channels](./integrations/channels/index.md)** - choose where bots are reachable.
 - **[Skills](./guides/skills.md)** and **[Supermarket](./guides/supermarket.md)** - install reusable capabilities.
 - **[Scheduled Tasks](./guides/schedule.md)** and **[Access Control](./guides/access.md)** - operate recurring work and permissions.
+- **[Help Center](https://memoh.ai/help)** - plans, billing, and account questions, plus a direct line to the team.
