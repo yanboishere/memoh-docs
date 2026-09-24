@@ -1,6 +1,6 @@
 # LINE
 
-接上 LINE 后，用户加机器人绑定的 LINE 官方账号为好友，即可 1 对 1 聊天。
+接上 LINE 后，用户加 Bot 绑定的 LINE 官方账号为好友，即可 1 对 1 聊天。
 
 ## 先决条件：公网 HTTPS
 
@@ -20,7 +20,7 @@ LINE 用 **webhook** 推消息进来，出站图片也是 LINE 服务器来你�
 
 ## 2. 在 Memoh 里填
 
-1. 机器人 **Platforms** → **Add Channel** → **LINE**。
+1. Bot **Platforms** → **Add Channel** → **LINE**。
 2. 贴 **Channel Secret** 和 **Channel Access Token**。
 3. **Save**（或 **Save and Enable**）。回调 URL 要保存之后才会生成。
 
@@ -48,7 +48,7 @@ https://<公网 base>/channels/line/webhook/<config_id>
 
 ## 限制
 
-- **只支持私聊**。群和多人聊天室的消息会被忽略，把机器人拉进 LINE 群没有用。
+- **只支持私聊**。群和多人聊天室的消息会被忽略，把 Bot 拉进 LINE 群没有用。
 - 入站的**语音、视频、贴图、位置**不处理。
 - 出站图片必须公网 HTTPS 可访问，且符合 LINE 体积限制（原图 10 MB、预览图 1 MB）；图片之外的附件发不出去。
 - 回复走 LINE **Push API**，计入你 LINE 套餐的推送条数配额。

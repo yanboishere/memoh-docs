@@ -65,7 +65,7 @@ Default routing behavior:
 - **private conversations** default to `chat`
 - **group conversations on channel adapters** default to `discuss`
 
-`/new discuss` is not supported from the app's built-in chat channel. Use a real channel adapter such as Telegram, Discord, or Misskey if you want to explicitly create discuss sessions.
+`/new discuss` is not supported from the app's built-in chat channel. Use a real channel adapter such as Telegram or Discord if you want to explicitly create discuss sessions.
 
 This works across supported channels:
 

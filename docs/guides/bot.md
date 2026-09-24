@@ -30,7 +30,7 @@ Once created, clicking on a bot card takes you to its **Detail Page**, where you
 | **Workspace** | Container-backed workspace lifecycle, snapshots, data export/import. |
 | **Network** | Workspace network and overlay provider status/actions. |
 | **Memory** | Browse, search, create, edit, and compact memories. |
-| **Platforms** | Channel configurations such as Telegram, Discord, Feishu, QQ, Matrix, WeCom, WeChat, Misskey, DingTalk, and Web. |
+| **Platforms** | Channel configurations such as Telegram, Discord, Feishu, QQ, WeCom, WeChat, DingTalk, and Web. |
 | **Access** | ACL rules and default access behavior. |
 | **Tool Approval** | Human approval settings for tools that require confirmation. |
 | **Agents** | ACP-compatible coding agents, such as Codex and Claude Code, that can be enabled for chat workspace use. |

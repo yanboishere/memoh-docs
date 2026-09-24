@@ -46,7 +46,7 @@
 
 ## 6. 在 Memoh 里填
 
-1. 机器人 **Platforms** → **Add Channel** → **Slack**。
+1. Bot **Platforms** → **Add Channel** → **Slack**。
 2. 填 **Bot Token**（`xoxb-`）、**App-Level Token**（`xapp-`）。
 3. **Save and Enable**。
 

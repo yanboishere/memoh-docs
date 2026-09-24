@@ -65,7 +65,7 @@ Schedules are primarily created in two ways:
 
 The bot itself has access to a `schedule` tool. You can ask the bot to create a schedule in natural language:
 
-> "Create a schedule called 'Daily Digest' that runs every day at 8 AM and sends me a summary of my unread emails."
+> "Create a schedule called 'Daily Digest' that runs every day at 8 AM and sends me a summary of yesterday's repository activity."
 
 The bot will translate this into a cron expression and register the schedule automatically.
 
@@ -80,9 +80,9 @@ POST /api/bots/{bot_id}/schedule
 ```json
 {
   "name": "Daily Digest",
-  "description": "Summarize unread emails every morning",
+  "description": "Summarize repository activity every morning",
   "pattern": "0 8 * * *",
-  "command": "Summarize my unread emails and send the result to Telegram.",
+  "command": "Summarize yesterday's repository activity and send the result to Telegram.",
   "enabled": true,
   "max_calls": null
 }

@@ -1,10 +1,10 @@
 # 工作区（Workspace）与容器
 
-每个机器人都在一个 workspace 里工作。Server Deploy 里通常是隔离容器、Pod 或类似 VM 的 runtime；在受信任的 Desktop/local 场景里，也可以是宿主机上的本地目录。workspace 提供文件系统、命令执行环境、MCP runtime，以及可选的图形桌面。
+每个 Bot 都在一个 workspace 里工作。Server Deploy 里通常是隔离容器、Pod 或类似 VM 的 runtime；在受信任的 Desktop/local 场景里，也可以是宿主机上的本地目录。workspace 提供文件系统、命令执行环境、MCP runtime，以及可选的图形桌面。
 
 ## 是什么
 
-可以把 workspace 想成机器人私用的一台小电脑。它能：
+可以把 workspace 想成 Bot 私用的一台小电脑。它能：
 
 - 存文件、改文件
 - 在镜像允许时装包
@@ -12,15 +12,13 @@
 - 跨会话保留状态
 - 可选地运行桌面显示和有头浏览器
 
-workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`uv` 都在 PATH 上），机器人跑 Python 脚本、装包不用先折腾解释器。
-
-机器人还可以在 server workspace 之外、你接入的机器上干活——见 [电脑（远程 Runtime）](./computers.md)。
+workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`uv` 都在 PATH 上），Bot 跑 Python 脚本、装包不用先折腾解释器。
 
 底层容器 runtime 由 `config.toml` 的 `[container].backend` 决定，trusted local workspace 另行控制。官方 Docker Compose Server Deploy 使用 `containerd`；Docker Engine、Apple 和 local workspace 的差异见 [Workspace backend](../self-hosted/workspace-backends.md)。
 
 ## Workspace 相关 tab
 
-机器人详情页里有几组和 workspace 相关的 tab：
+Bot 详情页里有几组和 workspace 相关的 tab：
 
 | Tab | 内容 |
 |-----|------|
@@ -28,10 +26,10 @@ workspace toolkit 自带 **Node.js** 和 **Python** 两套运行时（`pip`、`u
 | **Desktop** | Workspace display runtime、有头浏览器可用性、实时 display session、关闭会话。 |
 | **Network** | Workspace 网络与 overlay provider 状态/动作。 |
 | **Tool Approval** | 需要人类确认的工具审批设置。 |
-| **Files** | 浏览和编辑机器人 workspace 文件系统。 |
+| **Files** | 浏览和编辑 Bot workspace 文件系统。 |
 | **Terminal** | 在当前 workspace runtime 里打开交互 shell。 |
 
-如果机器人使用 trusted local workspace，一些只适用于容器 runtime 的 tab 或按钮可能会隐藏或不可用。
+如果 Bot 使用 trusted local workspace，一些只适用于容器 runtime 的 tab 或按钮可能会隐藏或不可用。
 
 ## 容器生命周期
 

@@ -6,8 +6,7 @@ Welcome to the Memoh references. Everything you need to set up and use Memoh liv
 
 Start here if you are new to Memoh. Learn how to install the app, create your first bot, connect a channel, and handle day-to-day basics.
 
-- **[Get Started](./get-started.md)**: A guided tutorial — sign in, create a bot, give it real work, and connect a channel.
-- **[Quick Start](./quick-start.md)**: Install the app, sign in, create your first bot, and connect a channel in ten minutes.
+- **[Quick Start](./quick-start.md)**: Install the app, sign in, create your first bot, give it real work, and connect a chat platform.
 - **[Preferences](./preferences.md)**: Customize language, theme, typography, diagrams, and keyboard shortcuts.
 - **[Bot](./bot.md)**: Create a bot and configure its core tabs.
 - **[Sessions](./sessions.md)**: Understand chat and discuss sessions, routing, and status panels.
@@ -22,7 +21,6 @@ Deepen your usage once the basics are in place. These pages cover capabilities, 
 - **[Agents / ACP](./acp.md)**: Build multi-agent workflows and interoperate with the Agent Client Protocol.
 - **[Access Control](./access.md)**: Configure ACL presets, access modes, and scoped rules.
 - **[Workspace](./container.md)**: Understand workspace behavior from the product UI.
-- **[Computers](./computers.md)**: Register machines as remote runtimes.
 - **[Browser / Computer Use](./browser-computer-use.md)**: Work with headed browsers and visible desktop sessions.
 - **[Skills](./skills.md)** and **[Supermarket](./supermarket.md)**: Add reusable prompt modules and catalog templates.
 - **[Connectors](./connectors.md)**: Connect third-party services such as GitHub and Notion.
@@ -30,7 +28,6 @@ Deepen your usage once the basics are in place. These pages cover capabilities, 
 - **[Memory](./memory.md)**: Manage long-term memory after a provider is configured.
 - **[Compaction](./compaction.md)**: Reduce active session context size.
 - **[Scheduled Tasks](./schedule.md)**: Run recurring work on a cron schedule.
-- **[Email](./email.md)**: Configure email workflows.
 - **[Providers](../integrations/providers/index.md)**: LLM, web search, video, memory, and TTS providers.
 
 ## Use Cases

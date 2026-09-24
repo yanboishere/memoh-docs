@@ -21,4 +21,3 @@ Use Desktop when you want Memoh to behave like a native app with a tray icon and
 ## Related
 
 - [Workspace Backends](./workspace-backends.md) explains Docker, containerd, Apple, and local workspace runtime choices.
-- [Computers](../guides/computers.md) covers sharing your own machines with bots.

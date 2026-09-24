@@ -88,24 +88,12 @@ Prefer Claude Code or Codex? Attach your own subscription on the bot's **Agent**
 
 With a [memory provider](../integrations/providers/memory/index.md) configured, "whatever happened with that PR?" is a question it can just answer. When memories pile up, run **Compact** to merge and dedupe.
 
-## Work on Your Own Computer
-
-**Owns:** real files on a machine you designate.
-
-**Uses:** [Computers](./computers.md) · [Access Control](./access.md)
-
-**Start with:**
-
-> Using "My Mac": file the invoices in my Downloads folder into Documents/invoices by month. List every step you plan to take and wait for my confirmation before touching anything. Stay inside those two folders.
-
-Flip the **This computer** switch in the app to share the machine you are on. Writes and command execution require approval by default — a connected computer is effectively a shell, so [grant access](./access.md) deliberately and start read-only.
-
 ---
 
 ## From Example to Routine
 
 1. **Start read-only.** Let it read and prepare; review a few outputs before granting writes or execution.
-2. **Put constraints in the instructions.** Outcome, sources, constraints, format, checkpoints — spell out all five (see [Get Started](./get-started.md)).
+2. **Put constraints in the instructions.** Outcome, sources, constraints, format, checkpoints — spell out all five (see [Quick Start](./quick-start.md)).
 3. **Save repeated flows as [Skills](./skills.md).** One sentence should invoke the whole routine.
 4. **Add a [Schedule](./schedule.md) only once the flow is stable.** Trial-run with Max Calls first.
 5. **Keep writes and external actions behind approval,** even after the routine feels safe.

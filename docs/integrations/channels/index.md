@@ -11,13 +11,9 @@ Channels connect Memoh bots to messaging platforms. Configure them from the bot 
 | Feishu (Lark) | [Feishu Configuration](./feishu.md) | Supports webhook-style inbound mode |
 | Discord | [Discord Configuration](./discord.md) | Good fit for communities and servers |
 | QQ | [QQ Configuration](./qq.md) | Personal DM oriented |
-| Matrix | [Matrix Configuration](./matrix.md) | Decentralized homeserver support |
-| Misskey | [Misskey Configuration](./misskey.md) | Replies and reactions, no streaming |
 | DingTalk | [DingTalk Configuration](./dingtalk.md) | Enterprise private/group chat |
 | WeCom (WeWork) | [WeCom Configuration](./wecom.md) | Enterprise workspace integration |
 | WeChat | [WeChat Configuration](./weixin.md) | Personal QR login flow |
-| WeChat Official Account | [WeChat Official Account Configuration](./wechatoa.md) | Official account webhook flow |
-| Email | [Email](../../guides/email.md) | SMTP, Mailgun, Gmail OAuth, and related email provider flows |
 | Web | Built-in | Available from the Memoh web interface |
 
 ## WeChat Options

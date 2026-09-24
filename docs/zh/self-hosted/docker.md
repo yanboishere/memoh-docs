@@ -1,12 +1,12 @@
 # 服务器部署（Server Deploy）
 
-Server Deploy 是 Memoh 的自托管服务端部署形态，适合长期在线、多人、多租户、远程访问，或需要机器人在桌面离线时继续服务外部渠道的场景。
+Server Deploy 是 Memoh 的自托管服务端部署形态，适合长期在线、多人、多租户、远程访问，或需要 Bot 在桌面离线时继续服务外部渠道的场景。
 
 本页说明 Docker Compose 版 Server Deploy。要安装本地原生客户端，请看 [Desktop 桌面版](./desktop.md)。
 
 默认编排里包含 PostgreSQL、用于记忆向量的 pgvector 库、一次性迁移任务、主服务（显式配置 workspace backend，智能体也在同一进程）、渠道 worker 和网页前端。数据库仅支持 PostgreSQL。
 
-官方 Compose 栈使用 `containerd` workspace backend。server 镜像会启动内置 containerd，并挂好机器人 workspace 需要的 runtime 文件。Docker Engine 和 Apple 后端见 [Workspace backend](./workspace-backends.md)。
+官方 Compose 栈使用 `containerd` workspace backend。server 镜像会启动内置 containerd，并挂好 Bot workspace 需要的 runtime 文件。Docker Engine 和 Apple 后端见 [Workspace backend](./workspace-backends.md)。
 
 ## 服务结构
 

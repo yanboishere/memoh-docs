@@ -1,6 +1,6 @@
 # Discord
 
-接上 Discord 后，机器人可进服务器、在频道和私聊里说话。
+接上 Discord 后，Bot 可进服务器、在频道和私聊里说话。
 
 ## 1. 建 Discord 应用
 
@@ -18,7 +18,7 @@
 
 保存。
 
-## 3. 把机器人拉进服务器
+## 3. 把 Bot 拉进服务器
 
 1. **OAuth2** → **URL Generator**。
 2. 勾选 scope：`bot`、`applications.commands`。
@@ -29,7 +29,7 @@
 
 ## 4. 在 Memoh 里填
 
-1. 机器人 **Platforms** → **Add Channel** → **Discord**。
+1. Bot **Platforms** → **Add Channel** → **Discord**。
 2. 贴 **Bot Token**。
 3. **Save and Enable**。
 

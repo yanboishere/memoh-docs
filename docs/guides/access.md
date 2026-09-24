@@ -2,7 +2,7 @@
 
 Memoh access control has two layers:
 
-- **Channel Members** control identities coming from IM channels such as Telegram, Discord, Feishu, Matrix, QQ, and similar platforms.
+- **Channel Members** control identities coming from IM channels such as Telegram, Discord, Feishu, QQ, and similar platforms.
 - **Workspace Members** control registered Memoh users in the app and workspace.
 
 The old ACL rule model still exists, but it is now the advanced engine behind Channel chat access. Most day-to-day changes should start from the bot's **Access** tab, using **Channel Members** and **Workspace Members**.
@@ -56,7 +56,7 @@ Workspace access is for registered Memoh users. It is separate from IM chat acce
 
 Channel Members is the IM-side access surface.
 
-Each row represents a **channel identity** — one Telegram user, Discord member, or Matrix user — or a **group** (see below). Members are added from the inline picker in the card header; identity and group candidates appear in the same dropdown, grouped by section. A row can have two independent permissions:
+Each row represents a **channel identity** — one Telegram user or Discord member — or a **group** (see below). Members are added from the inline picker in the card header; identity and group candidates appear in the same dropdown, grouped by section. A row can have two independent permissions:
 
 | Permission | Meaning |
 |------------|---------|

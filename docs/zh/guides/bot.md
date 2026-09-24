@@ -1,6 +1,6 @@
-# 机器人
+# Bot
 
-机器人是 Memoh 里**独立**的智能体：自带 workspace、长期记忆、可配性格，并能通过各 **渠道** 对话、用工具做事。
+Bot 是 Memoh 里**独立**的智能体：自带 workspace、长期记忆、可配性格，并能通过各 **渠道** 对话、用工具做事。
 
 ## 创建
 
@@ -24,7 +24,7 @@
 | **Overview** | workspace runtime、库、渠道、记忆等健康检查 |
 | **General** | 主模型/标题/生图、记忆/搜索/TTS 绑定、时区、语言、推理、危险区 |
 | **Desktop** | Workspace display runtime、有头浏览器、实时 display session |
-| **电脑** | 远程运行时（运行 Memoh runtime 的自有机器），机器人可在其上读写文件、执行命令 |
+| **电脑** | 远程运行时（运行 Memoh runtime 的自有机器），Bot 可在其上读写文件、执行命令 |
 | **Workspace** | 容器型 workspace 起停、快照、导入导出 |
 | **Network** | Workspace 网络与 overlay provider 状态/动作 |
 | **Memory** | 浏览、搜、建、改、压记忆 |
@@ -34,19 +34,19 @@
 | **Agents** | 可为聊天 workspace 启用的 ACP 兼容编码智能体，如 Codex、Claude Code |
 | **Email** | 邮箱绑定、发件箱 |
 | **Connectors** | 经 Connect-It 连接的第三方服务（OAuth 或 API Key）：状态、启停、重新授权、断开 |
-| **Hooks** | 保存在 `/data/.memoh/hooks.json` 的机器人自动化规则 |
+| **Hooks** | 保存在 `/data/.memoh/hooks.json` 的 Bot 自动化规则 |
 | **MCP** | 连接（Stdio/Remote/OAuth） |
 | **Compaction** | 会话压缩设置与记录 |
 | **Schedule** | cron 与日志 |
 | **Skills** | 技能 Markdown |
 
-Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace UI 里，不是机器人详情页 tab。要看文件、跑 shell、操作浏览器或桌面，请进入对应聊天里的 workspace 区域。
+Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace UI 里，不是 Bot 详情页 tab。要看文件、跑 shell、操作浏览器或桌面，请进入对应聊天里的 workspace 区域。
 
 ---
 
 ## 核心先配什么
 
-1. 打开机器人 **General**，先管模型与各类绑定。
+1. 打开 Bot **General**，先管模型与各类绑定。
 2. **Schedule** 管周期性自主任务。
 3. **Compaction** 管会话写不长时的压缩。
 4. **Access** 在 ACL 预设之后细调。
@@ -72,7 +72,7 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 | **Search Provider** | 联网搜索用哪家 |
 | **TTS Model** | 来自 TTS 提供方流程，不在普通 chat 模型服务商里选 |
 | **Timezone** | 不填则用户时区再落到系统 |
-| **Language** | 机器人主用语 |
+| **Language** | Bot 主用语 |
 | **Reasoning Effort** | 当前 chat 模型有 `reasoning` 时可用；可选值随模型而定（如 `low` / `medium` / `high`） |
 
 注意：
@@ -108,7 +108,7 @@ Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace 
 
 ## Workspace 文件与终端
 
-Workspace 文件和终端在聊天 workspace UI 里使用；前提是该机器人有可用的 workspace runtime。这里可以：
+Workspace 文件和终端在聊天 workspace UI 里使用；前提是该 Bot 有可用的 workspace runtime。这里可以：
 
 - 浏览、编辑 workspace 文件
 - 打开 workspace 内的终端会话
@@ -120,4 +120,4 @@ Workspace 文件和终端在聊天 workspace UI 里使用；前提是该机器�
 
 ## 删除
 
-**General** 最下 **Danger Zone** -> **Delete Bot**，会删掉该机器人相关数据（含 workspace 文件与记忆等），**不可恢复**。
+**General** 最下 **Danger Zone** -> **Delete Bot**，会删掉该 Bot 相关数据（含 workspace 文件与记忆等），**不可恢复**。

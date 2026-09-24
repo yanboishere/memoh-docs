@@ -1,6 +1,6 @@
 # 工作区后端（Workspace backend）
 
-每个 Memoh 机器人都在一个 workspace 里工作。workspace 可以是隔离容器，也可以是在 Desktop/local 场景下明确受信任的本机目录。Backend 决定 workspace 跑在哪里，以及隔离、网络、快照和 display 能力是否可用。
+每个 Memoh Bot 都在一个 workspace 里工作。workspace 可以是隔离容器，也可以是在 Desktop/local 场景下明确受信任的本机目录。Backend 决定 workspace 跑在哪里，以及隔离、网络、快照和 display 能力是否可用。
 
 ## 容器后端
 
@@ -17,7 +17,7 @@ backend = "containerd" # containerd、docker 或 apple
 | `docker` | Memoh 直接跑在宿主机，宿主机有 Docker Engine | 走宿主机 Docker API。`container.runtime_dir` 这类 bind mount 源路径必须在 Docker 宿主机上真实存在。 |
 | `apple` | macOS 本地测试 | 通过 socktainer 和 Apple Containerization。provider sidecar 不支持。 |
 
-一键 Docker Compose Server Deploy 固定使用 `containerd`。这是有意的：server 镜像会启动内置 containerd，并挂好机器人 workspace 需要的 runtime 文件。`docker`、`apple` 更适合你能控制宿主机 runtime 路径的手动部署。
+一键 Docker Compose Server Deploy 固定使用 `containerd`。这是有意的：server 镜像会启动内置 containerd，并挂好 Bot workspace 需要的 runtime 文件。`docker`、`apple` 更适合你能控制宿主机 runtime 路径的手动部署。
 
 ## Trusted local workspace
 
@@ -30,7 +30,7 @@ enabled = true
 
 Trusted local workspace 直接用 server 进程权限在宿主机上运行。它适合个人桌面工作流和本地开发，但**没有容器隔离**。不要在不受信任的 server 部署里打开 local workspace。
 
-当机器人使用 local workspace 时，依赖容器桌面或容器 display session 的界面能力可能会隐藏或不可用。
+当 Bot 使用 local workspace 时，依赖容器桌面或容器 display session 的界面能力可能会隐藏或不可用。
 
 ## containerd
 
@@ -94,10 +94,10 @@ Local workspace 不提供同样的容器桌面隔离。工具层面的区别见 
 
 ## 网络和 overlay
 
-机器人网络有两层：
+Bot 网络有两层：
 
 - runtime network：把 workspace 接到基础容器或 Pod 网络。
-- overlay provider：如 Tailscale、NetBird，可给单个机器人附加私有网络。
+- overlay provider：如 Tailscale、NetBird，可给单个 Bot 附加私有网络。
 
 不同后端能力不同：
 
@@ -108,4 +108,4 @@ Local workspace 不提供同样的容器桌面隔离。工具层面的区别见 
 | `apple` | 基础本地 runtime | 不支持 | 不支持 | 有限 |
 | `local` | 宿主机网络 | 不支持 | 宿主机级别 | 无容器桌面 |
 
-Overlay provider 在机器人界面里配置，不在全局 TOML 里配。全局 backend 仍然重要，因为它决定能跑哪类 overlay driver。
+Overlay provider 在 Bot 界面里配置，不在全局 TOML 里配。全局 backend 仍然重要，因为它决定能跑哪类 overlay driver。

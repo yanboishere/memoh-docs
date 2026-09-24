@@ -1,6 +1,6 @@
 # Telegram
 
-把 Memoh 机器人接到 Telegram。Memoh 对 TG 支持较全：流式、Markdown、附件等。
+把 Memoh Bot 接到 Telegram。Memoh 对 TG 支持较全：流式、Markdown、附件等。
 
 ## 1. 在 Telegram 建 Bot
 
@@ -17,7 +17,7 @@
 
 ## 2. 在 Memoh 里填
 
-1. 网页里打开机器人 **详情** → **Platforms**。
+1. 网页里打开 Bot **详情** → **Platforms**。
 2. **Add Channel** → 选 **Telegram**。
 3. 把 **API Token** 填进凭据。
 4. **Save and Enable**。
@@ -26,5 +26,5 @@
 
 - **流式**：边生成边出字。
 - **Markdown**：粗体、斜体、代码块、链接等。
-- **附件**：收图/文件，机器人也可发文件。
-- **回复链**：机器人能理解回复消息中的上下文。
+- **附件**：收图/文件，Bot 也可发文件。
+- **回复链**：Bot 能理解回复消息中的上下文。

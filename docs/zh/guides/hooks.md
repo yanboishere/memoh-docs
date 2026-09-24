@@ -1,18 +1,18 @@
 # Bot Hooks
 
-Bot Hooks 可以让机器人在工具调用、对话 turn、记忆、workspace 活动、审批、压缩和 subagent 等流程前后运行小型自动化规则。每个机器人都有自己的配置文件：
+Bot Hooks 可以让 Bot 在工具调用、对话 turn、记忆、workspace 活动、审批、压缩和 subagent 等流程前后运行小型自动化规则。每个 Bot 都有自己的配置文件：
 
 ```text
 /data/.memoh/hooks.json
 ```
 
-打开机器人 **详情页**，进入 **Hooks** tab，就可以从 UI 编辑这个文件。
+打开 Bot **详情页**，进入 **Hooks** tab，就可以从 UI 编辑这个文件。
 
 ---
 
 ## Hooks Tab
 
-Hooks tab 是机器人 hook 配置的 JSON 编辑器。它可以：
+Hooks tab 是 Bot hook 配置的 JSON 编辑器。它可以：
 
 - 显示 `/data/.memoh/hooks.json` 是否存在
 - 显示用户配置是否启用
@@ -124,7 +124,7 @@ v0.13.0 支持两类 action：`command` 和 `tool`。
 }
 ```
 
-`command` action 会在机器人 workspace 容器内运行。hook 请求会作为 JSON 通过 stdin 传入，末尾带换行。
+`command` action 会在 Bot workspace 容器内运行。hook 请求会作为 JSON 通过 stdin 传入，末尾带换行。
 
 工作目录解析顺序：
 
@@ -169,7 +169,7 @@ v0.13.0 支持两类 action：`command` 和 `tool`。
 }
 ```
 
-`tool` action 会按名称调用一个可用的机器人工具，并传入配置里的 `input`。如果工具结果是对象，可以返回 `decision`、`reason` 和 `append_context`。
+`tool` action 会按名称调用一个可用的 Bot 工具，并传入配置里的 `input`。如果工具结果是对象，可以返回 `decision`、`reason` 和 `append_context`。
 
 `mcp_tool` 在代码里是保留类型，但 v0.13.0 会拒绝它。
 
@@ -254,10 +254,10 @@ Hooks tab 会从 `/bots/{bot_id}/hooks/events` 加载事件目录。标记为 ru
 
 ## 安全注意事项
 
-Hooks 很强大。请把它们当成会在机器人 workspace 里运行的代码来对待。
+Hooks 很强大。请把它们当成会在 Bot workspace 里运行的代码来对待。
 
 - 启用前审查每个 command action。
-- 小心使用 `PreToolUse`、`BeforeWorkspaceCommand` 和 `BeforeFileWrite`；它们可能阻断机器人的正常工作。
+- 小心使用 `PreToolUse`、`BeforeWorkspaceCommand` 和 `BeforeFileWrite`；它们可能阻断 Bot 的正常工作。
 - 保持较短 timeout，并明确设置 `on_error`。
 - 不要把长期有效的 secrets 直接写进 `hooks.json`。
 - 对高风险 hooks 使用尽量窄的 `matcher`。
@@ -267,5 +267,5 @@ Hooks 很强大。请把它们当成会在机器人 workspace 里运行的代码
 
 ## 相关页面
 
-- [机器人](./bot.md)
+- [Bot](./bot.md)
 - [技能](./skills.md)

@@ -1,6 +1,6 @@
 # 记忆提供方
 
-**Memory Provider** 决定机器人**怎么存、怎么取、怎么管**长期记忆。在机器人 **General** 里绑一个，即成为抽取与检索记忆的后端。
+**Memory Provider** 决定 Bot**怎么存、怎么取、怎么管**长期记忆。在 Bot **General** 里绑一个，即成为抽取与检索记忆的后端。
 
 ## 有哪些
 
@@ -15,7 +15,7 @@
 1. 侧栏 **Memory Providers**。
 2. 选类型，建一个实例。
 3. 配好参数。
-4. 机器人 **General** → **Memory Provider** 选中。
+4. Bot **General** → **Memory Provider** 选中。
 5. 在 **Memory** tab 里管具体条目。
 
 ---

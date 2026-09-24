@@ -35,7 +35,7 @@ Switching to a different server clears the local sign-in state, so you will auth
 
 Desktop can register the machine it runs on as a **Computer** that server-side bots can work on, without running a separate runtime process. Enable **This computer**, give it a name, and Desktop keeps the connection alive in the background using the embedded Memoh runtime SDK. Credentials are stored with the OS secure storage.
 
-See [Computers](../guides/computers.md) for the permission model, per-bot setup, and what bots can do on a connected computer.
+Access is granted per bot, and write/execute actions require approval by default — see [Access Control](../guides/access.md).
 
 ## What Desktop manages
 
