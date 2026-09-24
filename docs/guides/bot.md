@@ -42,7 +42,7 @@ Once created, clicking on a bot card takes you to its **Detail Page**, where you
 | **Schedule** | Cron-based scheduled tasks and execution logs. |
 | **Skills** | Markdown-based skill files that define bot personality and capabilities. |
 
-Files, Terminal, Display, and Browser workspace tools live in the chat workspace UI. They are not Bot Detail tabs. Use the workspace side of a chat when you need to inspect files, run shell commands, or operate the bot's browser/desktop.
+Files, Terminal, and the desktop/browser panes are also available inside the chat workspace UI — use the workspace side of a chat when you want to inspect files, run shell commands, or watch the bot's browser and desktop without leaving the conversation.
 
 ---
 

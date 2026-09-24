@@ -7,7 +7,9 @@
 刚接触 Memoh？从这里开始。学习如何安装应用、创建第一个 Bot、接入渠道，并处理日常基础操作。
 
 - **[概览](./overview.md)**：Memoh 是什么，各个部件如何搭在一起。
+- **[产品动态](./changelog.md)**：产品更新与下线记录，新的在前。
 - **[快速开始](./quick-start.md)**：安装应用、登录、创建第一个 Bot、交给它真实任务，并接入聊天平台。
+- **[和 Bot 协作](./working-with-bots.md)**：什么任务适合交给 Bot、请求怎么说清楚、什么时候拆多个 Bot。
 - **[用户偏好](./preferences.md)**：配置界面语言、主题、字体、图表和快捷键。
 - **[Bot](./bot.md)**：创建 Bot 并配置核心标签页。
 - **[会话](./sessions.md)**：理解 chat、discuss、路由和状态区。
@@ -19,7 +21,9 @@
 
 基础就绪后深入使用。这些页面涵盖高级能力、自动化与外部提供方。
 
+- **[扩展能力怎么选](./extensions.md)**：技能、Hooks、MCP、连接器、应用市场，该用哪个。
 - **[Agents / ACP](./acp.md)**：构建多智能体工作流，并接入 Agent Client Protocol。
+- **[审批与信任](./approvals.md)**：Bot 能碰什么、什么时候会问你、哪些动作留在审批后面。
 - **[访问控制](./access.md)**：配置 ACL 预设、访问模式和来源限定。
 - **[Workspace](./container.md)**：从产品界面理解 workspace 行为。
 - **[Browser / Computer Use](./browser-computer-use.md)**：使用有头浏览器和可见桌面会话。
@@ -38,3 +42,7 @@
 ## 获取帮助
 
 本站是产品参考文档。订阅计划、credits 计费、账号类问题，以及联系 Memoh 团队的方式，请访问 [帮助中心](https://memoh.ai/help)。
+
+## 帮助
+
+- **[故障排查](./troubleshooting.md)**：按症状查修法，从破坏性最小的一步开始。

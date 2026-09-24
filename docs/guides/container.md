@@ -22,7 +22,7 @@ Bot detail pages expose workspace-related settings across several tabs:
 
 | Tab | Purpose |
 |-----|---------|
-| **Container** | Container lifecycle, snapshots, data export/import, and CDI device settings. |
+| **Workspace** | Container lifecycle, snapshots, data export/import, and CDI device settings. |
 | **Desktop** | Workspace display runtime, headed browser availability, live display sessions, and session cleanup. |
 | **Network** | Workspace network and overlay provider status/actions. |
 | **Tool Approval** | Approval settings for tools that need explicit human permission. |
@@ -33,7 +33,7 @@ Some tabs are hidden or limited for trusted local workspaces when the feature on
 
 ## Container lifecycle
 
-Manage the container-backed workspace from the **Container** tab.
+Manage the container-backed workspace from the **Workspace** tab.
 
 - **Create**: Initialize the workspace container if it does not exist. Progress is shown through SSE during image pull and creation.
 - **Start**: Launch the workspace runtime.
@@ -50,7 +50,7 @@ When enabled, the workspace can run a headed Chrome/Chromium browser inside the 
 
 ## Container information
 
-The **Container** tab displays runtime data such as:
+The **Workspace** tab displays runtime data such as:
 
 - container ID and status
 - image
@@ -62,11 +62,11 @@ The **Container** tab displays runtime data such as:
 
 Memoh can provide host devices to a bot container through CDI (Container Device Interface). This is an advanced capability for users who want to expose host-managed devices, most commonly GPUs, to the container runtime.
 
-In the app, this capability is placed under **Advanced options** in the **Container** tab. It is optional and only needs to be configured when the bot must access CDI-backed devices from the host.
+In the app, this capability is placed under **Advanced options** in the **Workspace** tab. It is optional and only needs to be configured when the bot must access CDI-backed devices from the host.
 
 ### Configure CDI Devices
 
-1. Open the bot's **Container** tab.
+1. Open the bot's **Workspace** tab.
 2. Click **Create** if the container does not exist, or recreate the container if you need to change GPU settings.
 3. Expand **Advanced options**.
 4. Enable **GPU**.
@@ -99,7 +99,7 @@ If Memoh reports an error such as `unresolvable CDI devices`, the configured dev
 - CDI device settings are applied when the container is created. Updating the setting later requires recreating the container.
 - Stopping and starting an existing container does not change its attached CDI devices.
 - The container image still needs the appropriate user-space libraries and tools if you want to run CUDA or ROCm software inside the container.
-- After creation, the **Container** tab shows the effective attached CDI devices for verification.
+- After creation, the **Workspace** tab shows the effective attached CDI devices for verification.
 
 ## Snapshots
 
@@ -107,7 +107,7 @@ Snapshots allow you to capture the current state of the bot's container workspac
 
 ## Data Export and Import
 
-The **Container** tab supports exporting and importing workspace data for backup, migration, or sharing purposes.
+The **Workspace** tab supports exporting and importing workspace data for backup, migration, or sharing purposes.
 
 - **Export Data** packages the workspace filesystem data into a downloadable archive.
 - **Import Data** extracts an uploaded archive into the workspace filesystem.

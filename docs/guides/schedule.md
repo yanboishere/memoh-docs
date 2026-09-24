@@ -24,7 +24,7 @@ A **Schedule** is a cron-triggered rule bound to a specific bot. When a schedule
 
 ## Cron Pattern Reference
 
-The `pattern` field uses standard cron syntax with five fields. It is evaluated in the server's configured timezone. By default, Memoh uses `UTC`, and you can change it with the top-level `timezone` config value.
+The `pattern` field uses standard cron syntax with five fields. It is evaluated in the bot's timezone — the **Timezone** field on the bot's **General** tab, which falls back to the server's top-level `timezone` config (`UTC` by default) when unset.
 
 ```
 ┌───────────── minute (0–59)

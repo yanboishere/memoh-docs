@@ -7,7 +7,9 @@ Welcome to the Memoh references. Everything you need to set up and use Memoh liv
 Start here if you are new to Memoh. Learn how to install the app, create your first bot, connect a channel, and handle day-to-day basics.
 
 - **[Overview](./overview.md)**: What Memoh is and how the pieces fit together.
+- **[Changelog](./changelog.md)**: Product updates and deprecations, newest first.
 - **[Quick Start](./quick-start.md)**: Install the app, sign in, create your first bot, give it real work, and connect a chat platform.
+- **[Working with Bots](./working-with-bots.md)**: What to hand off, how to state a request, and when to split bots.
 - **[Preferences](./preferences.md)**: Customize language, theme, typography, diagrams, and keyboard shortcuts.
 - **[Bot](./bot.md)**: Create a bot and configure its core tabs.
 - **[Sessions](./sessions.md)**: Understand chat and discuss sessions, routing, and status panels.
@@ -19,7 +21,9 @@ Start here if you are new to Memoh. Learn how to install the app, create your fi
 
 Deepen your usage once the basics are in place. These pages cover capabilities, automation, and external providers.
 
+- **[Choosing an Extension](./extensions.md)**: Skills, hooks, MCP, connectors, or Supermarket — which to reach for.
 - **[Agents / ACP](./acp.md)**: Build multi-agent workflows and interoperate with the Agent Client Protocol.
+- **[Approvals and Trust](./approvals.md)**: What a bot can touch, when it asks you, and what to keep behind approval.
 - **[Access Control](./access.md)**: Configure ACL presets, access modes, and scoped rules.
 - **[Workspace](./container.md)**: Understand workspace behavior from the product UI.
 - **[Browser / Computer Use](./browser-computer-use.md)**: Work with headed browsers and visible desktop sessions.
@@ -38,3 +42,7 @@ Deepen your usage once the basics are in place. These pages cover capabilities, 
 ## Getting Help
 
 These pages are the product reference. For plans, credits and billing, account questions, and a direct line to the Memoh team, visit the [Help Center](https://memoh.ai/help).
+
+## Help
+
+- **[Troubleshooting](./troubleshooting.md)**: Symptom-first fixes, ordered from the least destructive step.

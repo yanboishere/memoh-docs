@@ -3,6 +3,7 @@ const references = [
     text: '参考文档',
     items: [
       { text: '总览', link: '/zh/guides/' },
+      { text: '产品动态', link: '/zh/guides/changelog.md' },
     ],
   },
   {
@@ -10,6 +11,7 @@ const references = [
     items: [
       { text: '概览', link: '/zh/guides/overview.md' },
       { text: '快速开始', link: '/zh/guides/quick-start.md' },
+      { text: '和 Bot 协作', link: '/zh/guides/working-with-bots.md' },
       { text: '用户偏好', link: '/zh/guides/preferences.md' },
       { text: 'Bot', link: '/zh/guides/bot.md' },
       { text: '会话', link: '/zh/guides/sessions.md' },
@@ -37,7 +39,9 @@ const references = [
   {
     text: '进阶教程',
     items: [
+      { text: '扩展能力怎么选', link: '/zh/guides/extensions.md' },
       { text: 'Agents / ACP', link: '/zh/guides/acp.md' },
+      { text: '审批与信任', link: '/zh/guides/approvals.md' },
       { text: '访问控制', link: '/zh/guides/access.md' },
       { text: '工作区', link: '/zh/guides/container.md' },
       { text: 'Browser / Computer Use', link: '/zh/guides/browser-computer-use.md' },
@@ -83,6 +87,12 @@ const references = [
     text: '使用场景',
     items: [
       { text: '使用场景', link: '/zh/guides/use-cases.md' },
+    ],
+  },
+  {
+    text: '帮助',
+    items: [
+      { text: '故障排查', link: '/zh/guides/troubleshooting.md' },
     ],
   },
 ]

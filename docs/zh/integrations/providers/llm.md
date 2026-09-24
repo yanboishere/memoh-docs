@@ -4,7 +4,7 @@
 
 - 一个或多个 **模型服务商**（怎么连上游 API）
 - 其下的 **模型**
-- 若要朗读，再配 **语音合成**（见 [TTS](./tts/index.md)）
+- 若要朗读，再配 **语音合成**（见 [TTS 提供方](./tts/index.md)）
 - 若要把语音转文字，再配 **语音转写**
 
 聊天与 embedding 在 **Models** 页管理；语音合成模型在 TTS 流程里单走，语音转写模型在 Transcription 设置页管理。
@@ -114,7 +114,15 @@ Copilot 凭据以前按用户存，现在和 Codex 一样是模型服务商级�
 
 ## 导入模型
 
-建完模型服务商后可以导入或手加模型。常见：选中模型服务商 → **Import Models**（若上游有目录）→ 勾要保存的。已知上游 id 时也可手填。
+建完模型服务商后，可以在它下面导入或手动添加模型。
+
+典型流程：
+
+1. 选中模型服务商。
+2. 若它能给出模型目录，点 **Import Models**。
+3. 勾选要存进 Memoh 的模型。
+
+已知上游模型 ID 时，也可以手动添加。
 
 ### 模型启用开关
 
@@ -136,7 +144,7 @@ Copilot 凭据以前按用户存，现在和 Codex 一样是模型服务商级�
 | `speech` | 朗读，挂在 TTS |
 | `transcription` | 语音转文字，挂在 Transcription |
 
-**Models** 页主要管 chat / embedding；speech 在 [TTS](./tts/index.md)，transcription 在 Transcription 设置页。
+**Models** 页主要管 chat / embedding；speech 在 [TTS 提供方](./tts/index.md)，transcription 在 Transcription 设置页。
 
 ---
 
@@ -180,7 +188,15 @@ Bot 上可单挂 **Image Generation Model**，须是带 `image-output` 的 chat 
 
 ## Embedding 模型
 
-给语义索引用。必填如 **Dimensions**（向量维数，如 1536）。和记忆或其它向量检索能力绑在一起用。
+Embedding 模型用于语义索引与检索。
+
+必填字段：
+
+| 字段 | 说明 |
+|------|------|
+| **Dimensions** | embedding 输出的向量维数，如 `1536`。 |
+
+配合记忆提供方，或任何依赖向量检索的能力使用。
 
 ---
 

@@ -24,6 +24,24 @@ The Docker Compose stack consists of multiple services. Some are always started,
 | **connect-it** | `connectors` | Co-hosted [Connect-It](https://github.com/memohai/connect-it) service backing bot [connectors](../guides/connectors.md) (see below) |
 
 
+### Connect-It Connectors
+
+The **connect-it** container runs [Connect-It](https://github.com/memohai/connect-it), the service behind bot [connectors](../guides/connectors.md) — it links third-party services such as GitHub and Notion to bots via OAuth or API keys. It shares Memoh's PostgreSQL instance with its data isolated in a separate `connect_it` schema, and manages its own migrations.
+
+The install script manages Connect-It end to end:
+
+- **Fresh installs** enable it by default (`MEMOH_CONNECT_IT_MODE=embedded`, Compose profile `connectors`); connectors work out of the box without creating a token in the Connect-It admin console by hand.
+- **Upgrades** keep it off unless it was already enabled; to turn it on, rerun the install script with `MEMOH_CONNECT_IT_MODE=embedded`.
+- All credentials — admin password, AES key, cookie secret, and the server-to-server API token — are generated once, written to `.env`, and reused across upgrades. Switching modes later does not lose existing connections.
+
+After install, the Connect-It admin console is at `http://localhost:8421` (user `admin`; the generated password is printed at the end of the install and stored in `.env`).
+
+Two things to watch:
+
+- **OAuth callbacks** go through Connect-It's public address, `http://localhost:8421` by default. If Memoh is accessed from other machines, set `MEMOH_CONNECT_IT_PUBLIC_BASE_URL` to an address those machines (and the OAuth providers) can reach.
+- **Mainland-China mirrors**: the Connect-It image lives on ghcr.io, which the memoh.cn registry mirror does not cover. If ghcr.io is unreachable, set `MEMOH_CONNECT_IT_MODE=disabled` to skip it.
+
+
 ## Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/)

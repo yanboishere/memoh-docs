@@ -76,12 +76,12 @@ Hooks tab 是 Bot hook 配置的 JSON 编辑器。它可以：
 
 | 字段 | 说明 |
 |------|------|
-| `version` | 必填的 schema 版本。v0.13.0 支持 `1`。 |
+| `version` | 必填的 schema 版本。当前版本为 `1`。 |
 | `enabled` | 启用或停用这个用户配置文件里的 hooks。默认 `true`。 |
 | `defaults.timeout` | 默认 action 超时时间。支持 `10s` 这类 Go duration，也支持整数秒。默认 `10s`。 |
 | `defaults.on_error` | 默认错误处理：`ignore`、`fail` 或 `block`。默认 `fail`。 |
 | `defaults.max_output_bytes` | 每个 command action 捕获 stdout/stderr 的最大字节数。默认 `65536`。 |
-| `defaults.trigger_nested_hooks` | schema 会解析这个字段，默认 `false`；v0.13.0 的 Hooks UI 没有单独控件。 |
+| `defaults.trigger_nested_hooks` | schema 会解析这个字段，默认 `false`；Hooks UI 目前没有单独控件。 |
 | `env` | 用户配置里的 command action 会使用的额外环境变量。 |
 | `hooks` | 规则列表。命中后按 `priority` 从高到低运行，同优先级保持文件顺序。 |
 
@@ -95,7 +95,7 @@ Hook 字段：
 | `enabled` | 启用或停用这个 hook。默认 `true`。 |
 | `priority` | 数字越大越先运行。 |
 | `actions` | hook 命中后要运行的 action。 |
-| `conditions` | schema 中保留给未来扩展；v0.13.0 匹配时使用 `event`、`enabled` 和 `matcher`。 |
+| `conditions` | schema 中保留给未来扩展；目前匹配时使用 `event`、`enabled` 和 `matcher`。 |
 
 `matcher` 的目标文本按下面顺序从 hook 请求里选择：
 
@@ -110,7 +110,7 @@ Hook 字段：
 
 ## Action 类型
 
-v0.13.0 支持两类 action：`command` 和 `tool`。
+目前支持两类 action：`command` 和 `tool`。
 
 ### Command Action
 
@@ -171,7 +171,7 @@ v0.13.0 支持两类 action：`command` 和 `tool`。
 
 `tool` action 会按名称调用一个可用的 Bot 工具，并传入配置里的 `input`。如果工具结果是对象，可以返回 `decision`、`reason` 和 `append_context`。
 
-`mcp_tool` 在代码里是保留类型，但 v0.13.0 会拒绝它。
+`mcp_tool` 在代码里是保留类型，但目前会被拒绝。
 
 ---
 
@@ -198,7 +198,7 @@ action 可以返回这些 decision：
 
 ## 事件目录
 
-Hooks tab 会从 `/bots/{bot_id}/hooks/events` 加载事件目录。标记为 runtime-supported 的事件已经接入 v0.13.0 执行路径。catalog-only 事件可以通过配置解析和测试接口，但 v0.13.0 没有实际的运行时路径会发出这些事件。
+Hooks tab 会从 `/bots/{bot_id}/hooks/events` 加载事件目录。标记为 runtime-supported 的事件已经接入当前执行路径。catalog-only 事件可以通过配置解析和测试接口，但目前没有实际的运行时路径会发出这些事件。
 
 | Event | 区域 | 已接入运行时 | 说明 |
 |-------|------|--------------|------|
@@ -232,10 +232,10 @@ Hooks tab 会从 `/bots/{bot_id}/hooks/events` 加载事件目录。标记为 ru
 | `PostCompact` | 压缩 | 是 | 会话压缩后运行。 |
 | `SubagentStart` | Subagent | 是 | subagent 任务开始前运行。 |
 | `SubagentStop` | Subagent | 是 | subagent 任务结束后运行。 |
-| `InboundMessageNormalized` | 消息 | 否 | v0.13.0 中仅存在于事件目录。 |
-| `BeforeOutboundMessage` | 消息 | 否 | v0.13.0 中仅存在于事件目录。 |
-| `AfterOutboundMessage` | 消息 | 否 | v0.13.0 中仅存在于事件目录。 |
-| `ChannelDeliveryFailed` | 消息 | 否 | v0.13.0 中仅存在于事件目录。 |
+| `InboundMessageNormalized` | 消息 | 否 | 目前仅存在于事件目录。 |
+| `BeforeOutboundMessage` | 消息 | 否 | 目前仅存在于事件目录。 |
+| `AfterOutboundMessage` | 消息 | 否 | 目前仅存在于事件目录。 |
+| `ChannelDeliveryFailed` | 消息 | 否 | 目前仅存在于事件目录。 |
 
 ---
 

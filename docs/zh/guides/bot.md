@@ -40,7 +40,7 @@ Bot 是 Memoh 里**独立**的智能体：自带 workspace、长期记忆、可�
 | **Schedule** | cron 与日志 |
 | **Skills** | 技能 Markdown |
 
-Files、Terminal、Display、Browser 这些 workspace 工具在聊天 workspace UI 里，不是 Bot 详情页 tab。要看文件、跑 shell、操作浏览器或桌面，请进入对应聊天里的 workspace 区域。
+Files、Terminal 以及桌面 / 浏览器面板在聊天的 workspace 区域里同样可用——想不离开对话就查看文件、跑 shell、盯着 Bot 的浏览器和桌面时，用聊天里的 workspace 侧栏。
 
 ---
 

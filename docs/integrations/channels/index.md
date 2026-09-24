@@ -2,19 +2,28 @@
 
 Channels connect Memoh bots to messaging platforms. Configure them from the bot **Platforms** tab so users can talk to the same bot through Slack, Telegram, Feishu, Discord, WeChat, and other platforms, as well as directly in the Memoh app.
 
-## Supported Channels
+## Channel capability matrix {#capability-matrix}
 
-| Platform | Guide | Notes |
-|----------|-------|-------|
-| Slack | [Slack Configuration](./slack.md) | Workspace messaging with threads |
-| Telegram | [Telegram Configuration](./telegram.md) | Strong attachment and streaming support |
-| Feishu (Lark) | [Feishu Configuration](./feishu.md) | Supports webhook-style inbound mode |
-| Discord | [Discord Configuration](./discord.md) | Good fit for communities and servers |
-| QQ | [QQ Configuration](./qq.md) | Personal DM oriented |
-| DingTalk | [DingTalk Configuration](./dingtalk.md) | Enterprise private/group chat |
-| WeCom (WeWork) | [WeCom Configuration](./wecom.md) | Enterprise workspace integration |
-| WeChat | [WeChat Configuration](./weixin.md) | Personal QR login flow |
-| Web | Built-in | Available from the Memoh web interface |
+| Channel | Markdown | Attachments | Media | Streaming | Reactions | Buttons | Edit/unsend | Threads | Group chats |
+|---------|----------|-------------|-------|-----------|-----------|---------|-------------|---------|-------------|
+| [Telegram](./telegram.md) | ✅ | ✅ | ✅ | ✅ | — | ✅⁴ | ✅⁴ | — | ✅ |
+| [Slack](./slack.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅⁴ | — | ✅⁵ | ✅ |
+| [Discord](./discord.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅⁴ | — | — | ✅ |
+| [Feishu (Lark)](./feishu.md) | ✅ | ✅ | ✅ | ✅ | ✅ | — | — | — | ✅ |
+| [DingTalk](./dingtalk.md) | ✅ | ✅ | ✅ | —³ | — | — | — | — | ✅ |
+| [WeCom](./wecom.md) | ✅ | ✅ | ✅ | ✅ | — | — | — | — | ✅ |
+| [WeChat](./weixin.md)¹ | — | ✅ | ✅ | — | — | — | — | — | — |
+| [QQ](./qq.md) | ✅ | ✅ | ✅ | —³ | — | — | — | — | ✅ |
+| [LINE](./line.md)² | — | ✅ | ✅ | — | — | — | — | — | — |
+| Web (built-in) | ✅ | ✅ | — | ✅ | — | — | — | — | — |
+
+1. WeChat (personal) sends plain text only — Markdown is not rendered — and supports private chats only.
+2. LINE sends outbound images as PNG/JPEG only and supports private chats only.
+3. DingTalk and QQ deliver responses as complete blocks instead of token-by-token streaming.
+4. Telegram is the only channel with message edit/unsend and inline buttons; the buttons on Slack and Discord are URL buttons.
+5. Slack is the only channel that supports threads.
+
+Feishu additionally supports a webhook-style inbound mode — see [Feishu Configuration](./feishu.md).
 
 ## WeChat Options
 

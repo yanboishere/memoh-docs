@@ -22,7 +22,7 @@ Bot 详情页里有几组和 workspace 相关的 tab：
 
 | Tab | 内容 |
 |-----|------|
-| **Container** | 容器生命周期、快照、导入导出、CDI 设备。 |
+| **工作区** | 容器生命周期、快照、导入导出、CDI 设备。 |
 | **Desktop** | Workspace display runtime、有头浏览器可用性、实时 display session、关闭会话。 |
 | **Network** | Workspace 网络与 overlay provider 状态/动作。 |
 | **Tool Approval** | 需要人类确认的工具审批设置。 |
@@ -33,7 +33,7 @@ Bot 详情页里有几组和 workspace 相关的 tab：
 
 ## 容器生命周期
 
-在 **Container** tab 管容器型 workspace：
+在 **工作区** tab 管容器型 workspace：
 
 - **Create**：没有就按镜像建；拉镜像、建实例时会有 SSE 进度。
 - **Start**：启动 workspace runtime。
@@ -50,7 +50,7 @@ Bot 详情页里有几组和 workspace 相关的 tab：
 
 ## 运行时信息
 
-**Container** tab 会显示：
+**工作区** tab 会显示：
 
 - container id 与状态
 - 镜像
@@ -60,11 +60,11 @@ Bot 详情页里有几组和 workspace 相关的 tab：
 
 ## 进阶：CDI 设备
 
-要把宿主机通过 **CDI**（常见是 GPU）透进容器，在 **Container** -> **Advanced** 里配。一般只有确实要在里面跑 CUDA/ROCm 等才要动。
+要把宿主机通过 **CDI**（常见是 GPU）透进容器，在 **工作区** -> **Advanced** 里配。一般只有确实要在里面跑 CUDA/ROCm 等才要动。
 
 ### 配法
 
-1. 打开 **Container**。
+1. 打开 **工作区**。
 2. 没有容器先 **Create**；要改 GPU 类设置往往要**重建**容器。
 3. 展开 **Advanced**。
 4. 开 **GPU**，在 **CDI devices** 里写设备名。
@@ -95,7 +95,7 @@ Bot 详情页里有几组和 workspace 相关的 tab：
 
 - CDI 在**创建**时生效，改配置后常要**重建**容器；只停再起**不会**换已挂设备。
 - 镜像里仍要装对的用户态库和工具，才能真正跑 CUDA/ROCm 软件。
-- 建好后 **Container** tab 会显示当前挂上的设备，便于核对。
+- 建好后 **工作区** tab 会显示当前挂上的设备，便于核对。
 
 ## 快照
 
@@ -103,7 +103,7 @@ Bot 详情页里有几组和 workspace 相关的 tab：
 
 ## 导入导出
 
-**Container** tab 支持导入导出 workspace 数据：
+**工作区** tab 支持导入导出 workspace 数据：
 
 - **Export Data**：把 workspace 文件系统数据打成包下载。
 - **Import Data**：从本地上传归档并解进 workspace 文件系统。

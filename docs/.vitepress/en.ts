@@ -3,6 +3,7 @@ const references = [
     text: 'References',
     items: [
       { text: 'Overview', link: '/guides/' },
+      { text: 'Changelog', link: '/guides/changelog.md' },
     ],
   },
   {
@@ -10,6 +11,7 @@ const references = [
     items: [
       { text: 'Overview', link: '/guides/overview.md' },
       { text: 'Quick Start', link: '/guides/quick-start.md' },
+      { text: 'Working with Bots', link: '/guides/working-with-bots.md' },
       { text: 'Preferences', link: '/guides/preferences.md' },
       { text: 'Bot', link: '/guides/bot.md' },
       { text: 'Sessions', link: '/guides/sessions.md' },
@@ -37,7 +39,9 @@ const references = [
   {
     text: 'Advanced',
     items: [
+      { text: 'Choosing an Extension', link: '/guides/extensions.md' },
       { text: 'Agents / ACP', link: '/guides/acp.md' },
+      { text: 'Approvals and Trust', link: '/guides/approvals.md' },
       { text: 'Access Control', link: '/guides/access.md' },
       { text: 'Workspace', link: '/guides/container.md' },
       { text: 'Browser / Computer Use', link: '/guides/browser-computer-use.md' },
@@ -83,6 +87,12 @@ const references = [
     text: 'Use Cases',
     items: [
       { text: 'Use Cases', link: '/guides/use-cases.md' },
+    ],
+  },
+  {
+    text: 'Help',
+    items: [
+      { text: 'Troubleshooting', link: '/guides/troubleshooting.md' },
     ],
   },
 ]

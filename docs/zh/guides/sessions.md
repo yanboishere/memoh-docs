@@ -59,9 +59,19 @@ ACP Agent 会话不通过 `/new` 创建。要先在 Bot 详情的 **Agents** tab
 
 **内置网页本地** 不支持 `/new discuss`，要 discuss 请用 Telegram、Discord 等真实渠道。
 
-在渠道里发这些命令会：建新会话、后续消息都进这路、旧会话保留但不再当「当前」。
+### 在外部渠道里
 
-**网页** 里也可用侧栏 **New Session**、切换、搜索、按类型筛（`chat`、`discuss`、`schedule`、`subagent`、`acp_agent`）、重命名、删除等。
+在 Telegram、Discord、飞书等外部渠道里，把 `/new`、`/new chat` 或 `/new discuss` 当消息发给 Bot，它会：建新会话、后续消息都进这路、旧会话保留但不再当「当前」。
+
+这些时候特别有用：
+
+- 想换话题，不想让 Bot 再引用旧上下文。
+- 这一路聊得太长，想干净重开。
+- 在不同任务之间切换。
+
+### 在客户端里
+
+**客户端** 里也可用侧栏 **New Session**、切换、搜索、按类型筛（`chat`、`discuss`、`schedule`、`subagent`、`acp_agent`）、重命名、删除等。
 
 ---
 
