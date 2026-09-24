@@ -88,5 +88,3 @@ A custom app must be published first: in the Feishu console, go to **App Release
 ### Enabling permissions requires an approval {#permission-approval}
 
 Some organizations require an approval flow for app permissions: click **Apply for Permissions** under **Capabilities** > **Permissions** to submit the request.
-
-For what this channel supports, see the [channel capability matrix](./index.md#capability-matrix).

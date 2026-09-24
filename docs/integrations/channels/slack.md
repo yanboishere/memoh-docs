@@ -114,5 +114,3 @@ Check that the `files:read` scope is enabled.
 ### The bot connects but receives no incoming messages {#no-incoming-messages}
 
 Check the bot events in **Event Subscriptions** and the matching `history` scopes again.
-
-For what this channel supports, see the [channel capability matrix](./index.md#capability-matrix).

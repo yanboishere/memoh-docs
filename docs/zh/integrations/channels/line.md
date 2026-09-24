@@ -77,5 +77,3 @@ Memoh 会用 **Channel Secret** 校验入站 webhook 的签名,事件在 24 小�
 ### 面板提示拿不到公网 base URL {#no-public-base-url}
 
 没有公网 HTTPS origin 就生成不了 webhook 回调 URL。先按前提条件把 `MEMOH_WEBHOOK_PUBLIC_BASE_URL` 或 Cloudflare Quick Tunnel 配好。
-
-该渠道支持的消息能力见 [渠道能力矩阵](./index.md#capability-matrix)。

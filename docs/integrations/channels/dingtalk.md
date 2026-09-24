@@ -51,5 +51,3 @@ The bot works in DingTalk group chats: @mention it in a supported group to trigg
 ## Disable and rotate credentials
 
 Disable or remove the channel at any time from the bot's **Platforms** tab. To rotate credentials, update **App Key** / **App Secret** in the same panel and save.
-
-For the message features this channel supports, see the [channel capability matrix](./index.md#capability-matrix).

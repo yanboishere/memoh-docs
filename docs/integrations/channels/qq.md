@@ -59,5 +59,3 @@ Disable or remove the channel at any time from the bot's **Platforms** tab. To r
 ### I lost the AppSecret {#appsecret-reset}
 
 **AppSecret** is shown only once, when the bot is created. Viewing it again on the QQ Bot Open Platform forces a reset; after the reset, update **AppSecret** in Memoh and save.
-
-For the message features this channel supports, see the [channel capability matrix](./index.md#capability-matrix).

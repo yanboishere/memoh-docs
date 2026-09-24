@@ -77,5 +77,3 @@ Disable or remove the channel at any time from the bot's **Platforms** tab. To r
 ### The panel warns that no public base URL is available {#no-public-base-url}
 
 The webhook callback URL cannot be built without a public HTTPS origin. Fix the `MEMOH_WEBHOOK_PUBLIC_BASE_URL` / Cloudflare Quick Tunnel setup described in the prerequisites first.
-
-For the message features this channel supports, see the [channel capability matrix](./index.md#capability-matrix).

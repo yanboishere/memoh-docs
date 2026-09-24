@@ -114,5 +114,3 @@ Memoh 的 Slack 适配走 Socket Mode：除 `xoxb-` 开头的 Bot token 外，�
 ### 连上了，但收不到任何入站消息 {#no-incoming-messages}
 
 重新核对 **Event Subscriptions** 里的 bot events，以及配套的 `history` 类 scope。
-
-该渠道支持的消息能力见 [渠道能力矩阵](./index.md#capability-matrix)。

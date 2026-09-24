@@ -44,5 +44,3 @@ Telegram group chats are supported. Add the bot to a group and @mention it by it
 ## Disable and rotate credentials
 
 You can disable or remove this channel at any time from the bot's **Platforms** tab. To rotate the token, update the **API Token** field and save.
-
-For what this channel supports, see the [channel capability matrix](./index.md#capability-matrix).

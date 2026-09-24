@@ -50,5 +50,3 @@ Disable or remove the channel at any time from the bot's **Platforms** tab. To s
 ### The QR code expired before I scanned it {#qr-expired}
 
 The QR code is valid for a limited window. Click **Start QR Login** again to fetch a fresh one.
-
-For the message features this channel supports, see the [channel capability matrix](./index.md#capability-matrix).

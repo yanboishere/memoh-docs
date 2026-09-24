@@ -50,5 +50,3 @@
 ### 还没扫,二维码就过期了 {#qr-expired}
 
 二维码有有效期。再点一次 **Start QR Login**,获取新的二维码。
-
-该渠道支持的消息能力见 [渠道能力矩阵](./index.md#capability-matrix)。

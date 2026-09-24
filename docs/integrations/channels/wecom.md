@@ -49,5 +49,3 @@ The bot also works in WeCom group chats: @mention it in a group to trigger a rep
 ## Disable and rotate credentials
 
 Disable or remove the channel at any time from the bot's **Platforms** tab. To rotate credentials, update **Bot ID** / **Secret** in the same panel and save.
-
-For the message features this channel supports, see the [channel capability matrix](./index.md#capability-matrix).

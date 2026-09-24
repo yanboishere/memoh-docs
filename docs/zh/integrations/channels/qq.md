@@ -59,5 +59,3 @@ Bot 支持 QQ 群聊与话题(thread)会话:在群里 @Bot 即可触发回复。
 ### AppSecret 找不到了 {#appsecret-reset}
 
 **AppSecret** 只在创建 Bot 时显示一次。在 QQ 开放平台再次查看会强制重置;重置后,在 Memoh 里更新 **AppSecret** 并保存。
-
-该渠道支持的消息能力见 [渠道能力矩阵](./index.md#capability-matrix)。

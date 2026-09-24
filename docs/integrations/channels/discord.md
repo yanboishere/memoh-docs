@@ -57,5 +57,3 @@ Discord servers are supported. After the bot is authorized into a server, @menti
 ## Disable and rotate credentials
 
 You can disable or remove this channel at any time from the bot's **Platforms** tab. To rotate the token, update the **Bot Token** field and save.
-
-For what this channel supports, see the [channel capability matrix](./index.md#capability-matrix).
