@@ -45,13 +45,4 @@ We fixed two design flaws that kept long conversations from hitting the prompt c
 
 Cache hit rates are way up as a result.
 
-### And more {#2026-10-19-more}
-
-Dozens of bug fixes and visual polish across the app, plus:
-
-- **Memoh knows Memoh.** A built-in `memoh-help` skill lets agents answer questions about Memoh from this documentation and the Help Center, instead of guessing from whatever happens to be installed in the workspace.
-- **Starter questions for each bot.** A new chat suggests three questions tailored to the bot and to you, drawn from its memory, your recent sessions, and its installed apps. This needs a **Title Model** to be configured.
-- **Richer Feishu replies.** Headings, tables, code blocks, and nested lists render properly in Feishu cards, and replies stream in with a typewriter effect.
-- **The right build on Apple silicon.** The desktop app notices when its Intel build is running on an Apple silicon Mac and offers to download the right one.
-
 [Read the full v0.22.0 release notes →](https://github.com/felinics/Memoh/releases/tag/v0.22.0)
