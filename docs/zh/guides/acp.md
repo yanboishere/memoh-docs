@@ -35,7 +35,7 @@ ACP 智能体在 Bot 的容器 workspace 里运行，所以 Bot 必须使用容�
 
 ### Grok Build {#grok-build}
 
-Grok Build 用 xAI API Key 或 Grok 账号认证。创建 Bot 时只能先填 API Key；Grok 账号要等 Bot 创建之后，在该智能体的设置里登录。Memoh 会显示验证页面和一次性代码——只在页面显示的 accounts.x.ai 地址上确认——之后自动完成授权。Memoh 会加密保存这个智能体的 Grok 凭据，并且只在运行时提供给 Grok Build。
+Grok Build 用 xAI API Key 或 Grok 账号认证。创建 Bot 时只能先填 API Key；Grok 账号要等 Bot 创建之后，在该智能体的设置里登录。Memoh 会显示验证页面和一次性代码，你在页面显示的 accounts.x.ai 地址上确认后，授权自动完成。不要在其他地址上确认这个代码。Memoh 会加密保存这个智能体的 Grok 凭据，并且只在运行时提供给 Grok Build。
 
 Grok Build 的内置工具遵循它自己的权限模式：
 
